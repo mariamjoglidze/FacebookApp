@@ -13,6 +13,8 @@
 		39D5C551279564AF002F49BC /* SignInScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C54F279564AF002F49BC /* SignInScene.storyboard */; };
 		39D5C553279564B2002F49BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C552279564B2002F49BC /* Assets.xcassets */; };
 		39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C554279564B2002F49BC /* LaunchScreen.storyboard */; };
+		39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56B27956CB1002F49BC /* TableViewExtension.swift */; };
+		39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		39D5C552279564B2002F49BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D5C555279564B2002F49BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D5C557279564B2002F49BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D5C56B27956CB1002F49BC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,7 @@
 				39D5C56627956925002F49BC /* Model */,
 				39D5C55E27956604002F49BC /* Scene */,
 				39D5C5612795665B002F49BC /* Resources */,
-				39D5C557279564B2002F49BC /* Info.plist */,
+				39D5C56827956BB9002F49BC /* Supporting Files */,
 			);
 			path = FacebookApp;
 			sourceTree = "<group>";
@@ -129,6 +133,8 @@
 		39D5C56427956900002F49BC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				39D5C56927956C50002F49BC /* TableViewExtension */,
+				39D5C56A27956C60002F49BC /* TableViewCellExtension */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +159,30 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		39D5C56827956BB9002F49BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39D5C557279564B2002F49BC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39D5C56927956C50002F49BC /* TableViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39D5C56B27956CB1002F49BC /* TableViewExtension.swift */,
+			);
+			path = TableViewExtension;
+			sourceTree = "<group>";
+		};
+		39D5C56A27956C60002F49BC /* TableViewCellExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */,
+			);
+			path = TableViewCellExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +258,9 @@
 			files = (
 				39D5C54E279564AF002F49BC /* SignInSceneViewController.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
+				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
+				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +411,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6HSF8G5L6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FacebookApp/Info.plist;
+				INFOPLIST_FILE = "FacebookApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = SignInScene;
@@ -407,7 +439,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6HSF8G5L6P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FacebookApp/Info.plist;
+				INFOPLIST_FILE = "FacebookApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = SignInScene;

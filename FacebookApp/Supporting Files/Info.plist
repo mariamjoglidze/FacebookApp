@@ -27,16 +27,16 @@
           <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>fbAPP-ID</string>
+            <string>fb505328431219046</string>
           </array>
           </dict>
         </array>
         <key>FacebookAppID</key>
-        <string>APP-ID</string>
+        <string>505328431219046</string>
         <key>FacebookClientToken</key>
-        <string>CLIENT-TOKEN</string>
+        <string>8a89089b3b9716d154ba8700666102ff</string>
         <key>FacebookDisplayName</key>
-        <string>APP-NAME</string>
+        <string>MJ</string>
         
         
         <key>LSApplicationQueriesSchemes</key>

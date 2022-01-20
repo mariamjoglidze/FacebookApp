@@ -35,6 +35,8 @@
 		39FF042927998854006B5319 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042727998854006B5319 /* FeedCell.xib */; };
 		39FF042E2799B025006B5319 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042C2799B025006B5319 /* FriendCell.swift */; };
 		39FF042F2799B025006B5319 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042D2799B025006B5319 /* FriendCell.xib */; };
+		39FF04332799B822006B5319 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* VideoCell.swift */; };
+		39FF04342799B822006B5319 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* VideoCell.xib */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		39FF042727998854006B5319 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		39FF042C2799B025006B5319 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		39FF042D2799B025006B5319 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		39FF04312799B822006B5319 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		39FF04322799B822006B5319 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +276,7 @@
 		39FF04032796EA5D006B5319 /* VideoesScreen */ = {
 			isa = PBXGroup;
 			children = (
+				39FF04302799B80E006B5319 /* VideoCell */,
 				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
 				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
 			);
@@ -349,6 +354,15 @@
 			path = FriendCell;
 			sourceTree = "<group>";
 		};
+		39FF04302799B80E006B5319 /* VideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				39FF04312799B822006B5319 /* VideoCell.swift */,
+				39FF04322799B822006B5319 /* VideoCell.xib */,
+			);
+			path = VideoCell;
+			sourceTree = "<group>";
+		};
 		4EFD49984AC31E6C05BBD02B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +433,7 @@
 			files = (
 				39FF042927998854006B5319 /* FeedCell.xib in Resources */,
 				39FF041927994F22006B5319 /* VideoesScreen.storyboard in Resources */,
+				39FF04342799B822006B5319 /* VideoCell.xib in Resources */,
 				39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */,
 				39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */,
 				39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */,
@@ -492,6 +507,7 @@
 				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
 				39FF040C27994D98006B5319 /* CoordinatorDeleegate.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
+				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
 				39FF042427994FF9006B5319 /* BaseViewController.swift in Sources */,

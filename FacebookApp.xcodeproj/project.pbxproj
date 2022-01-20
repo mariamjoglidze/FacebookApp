@@ -15,6 +15,22 @@
 		39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56B27956CB1002F49BC /* TableViewExtension.swift */; };
 		39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */; };
 		39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FB2796C937006B5319 /* Assets.xcassets */; };
+		39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FE2796E930006B5319 /* TabBar.storyboard */; };
+		39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04002796E96E006B5319 /* TabBarViewController.swift */; };
+		39FF040827994D7B006B5319 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040727994D7B006B5319 /* Storyboarded.swift */; };
+		39FF040A27994D85006B5319 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040927994D85006B5319 /* AppCoordinator.swift */; };
+		39FF040C27994D98006B5319 /* CoordinatorDeleegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */; };
+		39FF040E27994DA4006B5319 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040D27994DA4006B5319 /* Coordinator.swift */; };
+		39FF041127994E30006B5319 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041027994E2F006B5319 /* Strings.swift */; };
+		39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */; };
+		39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */; };
+		39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041627994F13006B5319 /* VideoesScreenViewController.swift */; };
+		39FF041927994F22006B5319 /* VideoesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041827994F22006B5319 /* VideoesScreen.storyboard */; };
+		39FF041B27994F4E006B5319 /* FriendsListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041A27994F4E006B5319 /* FriendsListScreen.storyboard */; };
+		39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */; };
+		39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */; };
+		39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042027994F74006B5319 /* SettingsScreenViewController.swift */; };
+		39FF042427994FF9006B5319 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042327994FF9006B5319 /* BaseViewController.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +45,22 @@
 		39D5C56B27956CB1002F49BC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
 		39FF03FB2796C937006B5319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39FF03FE2796E930006B5319 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		39FF04002796E96E006B5319 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		39FF040727994D7B006B5319 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		39FF040927994D85006B5319 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDeleegate.swift; sourceTree = "<group>"; };
+		39FF040D27994DA4006B5319 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		39FF041027994E2F006B5319 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeFeedScreen.storyboard; sourceTree = "<group>"; };
+		39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewController.swift; sourceTree = "<group>"; };
+		39FF041627994F13006B5319 /* VideoesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoesScreenViewController.swift; sourceTree = "<group>"; };
+		39FF041827994F22006B5319 /* VideoesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoesScreen.storyboard; sourceTree = "<group>"; };
+		39FF041A27994F4E006B5319 /* FriendsListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendsListScreen.storyboard; sourceTree = "<group>"; };
+		39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListScreenViewController.swift; sourceTree = "<group>"; };
+		39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
+		39FF042027994F74006B5319 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
+		39FF042327994FF9006B5319 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +130,14 @@
 		39D5C55E27956604002F49BC /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				39FF042227994FED006B5319 /* Base */,
 				39D5C5602795664B002F49BC /* LaunchScreen */,
 				39D5C55F27956615002F49BC /* SignIn */,
+				39FF03FD2796E91D006B5319 /* TabBarController */,
+				39FF04022796EA42006B5319 /* HomeFeedScreen */,
+				39FF04032796EA5D006B5319 /* VideoesScreen */,
+				39FF04042796EA78006B5319 /* FriendsListScreen  */,
+				39FF04052796EA92006B5319 /* SettingsScreen */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -107,8 +145,8 @@
 		39D5C55F27956615002F49BC /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				39D5C54D279564AF002F49BC /* SignInSceneViewController.swift */,
 				39D5C54F279564AF002F49BC /* SignInScene.storyboard */,
+				39D5C54D279564AF002F49BC /* SignInSceneViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -135,6 +173,7 @@
 				39D5C5652795691A002F49BC /* Utilities */,
 				39D5C563279568F5002F49BC /* Network */,
 				39D5C56427956900002F49BC /* Extensions */,
+				39FF040627994D61006B5319 /* Coordinator */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -158,6 +197,7 @@
 		39D5C5652795691A002F49BC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				39FF040F27994E24006B5319 /* Strings */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -199,6 +239,78 @@
 				39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */,
 			);
 			path = TableViewCellExtension;
+			sourceTree = "<group>";
+		};
+		39FF03FD2796E91D006B5319 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				39FF03FE2796E930006B5319 /* TabBar.storyboard */,
+				39FF04002796E96E006B5319 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		39FF04022796EA42006B5319 /* HomeFeedScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */,
+				39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */,
+			);
+			path = HomeFeedScreen;
+			sourceTree = "<group>";
+		};
+		39FF04032796EA5D006B5319 /* VideoesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
+				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
+			);
+			path = VideoesScreen;
+			sourceTree = "<group>";
+		};
+		39FF04042796EA78006B5319 /* FriendsListScreen  */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041A27994F4E006B5319 /* FriendsListScreen.storyboard */,
+				39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */,
+			);
+			path = "FriendsListScreen ";
+			sourceTree = "<group>";
+		};
+		39FF04052796EA92006B5319 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */,
+				39FF042027994F74006B5319 /* SettingsScreenViewController.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		39FF040627994D61006B5319 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				39FF040727994D7B006B5319 /* Storyboarded.swift */,
+				39FF040927994D85006B5319 /* AppCoordinator.swift */,
+				39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */,
+				39FF040D27994DA4006B5319 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		39FF040F27994E24006B5319 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041027994E2F006B5319 /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		39FF042227994FED006B5319 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39FF042327994FF9006B5319 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4EFD49984AC31E6C05BBD02B /* Frameworks */ = {
@@ -269,8 +381,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FF041927994F22006B5319 /* VideoesScreen.storyboard in Resources */,
+				39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */,
+				39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */,
 				39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */,
 				39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */,
+				39FF041B27994F4E006B5319 /* FriendsListScreen.storyboard in Resources */,
+				39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */,
 				39D5C551279564AF002F49BC /* SignInScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,10 +442,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D5C54E279564AF002F49BC /* SignInSceneViewController.swift in Sources */,
+				39FF041127994E30006B5319 /* Strings.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
+				39FF040E27994DA4006B5319 /* Coordinator.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
+				39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */,
+				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
+				39FF040A27994D85006B5319 /* AppCoordinator.swift in Sources */,
+				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
+				39FF040C27994D98006B5319 /* CoordinatorDeleegate.swift in Sources */,
+				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
+				39FF042427994FF9006B5319 /* BaseViewController.swift in Sources */,
+				39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */,
+				39FF040827994D7B006B5319 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

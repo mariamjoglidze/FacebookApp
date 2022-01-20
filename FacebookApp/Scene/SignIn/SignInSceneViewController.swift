@@ -9,7 +9,7 @@ import UIKit
 import FBSDKLoginKit
 
 
-class SignInSceneViewController: UIViewController, LoginButtonDelegate {
+class SignInSceneViewController: BaseViewController, LoginButtonDelegate {
     
     
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class SignInSceneViewController: UIViewController, LoginButtonDelegate {
                                                      tokenString: token,
                                                      version: nil,
                                                      httpMethod: .get)
-            
+
             request.start(completion:{ connection, result, error in
                 print("\(result)")
             })
@@ -36,8 +36,6 @@ class SignInSceneViewController: UIViewController, LoginButtonDelegate {
             view.addSubview(loginButton)
         }
         
-        
-        
     }
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
@@ -48,8 +46,14 @@ class SignInSceneViewController: UIViewController, LoginButtonDelegate {
                                                  version: nil,
                                                  httpMethod: .get)
         
+
         request.start(completion:{ connection, result, error in
-            print("\(result)")
+            let sb = UIStoryboard(name: "TabBar", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "TabBarViewController")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+//            self.coordinator?.start()
+//            print("\(result)")
         })
     }
     

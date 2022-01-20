@@ -15,11 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-6U-ONx">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rFT-M0-aYh"/>
+                                    <constraint firstAttribute="width" constant="200" id="vPN-9J-rCe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4z-QK-wAe">
+                                <rect key="frame" x="171.5" y="374" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I4z-QK-wAe" firstAttribute="top" secondItem="ZmV-6U-ONx" secondAttribute="bottom" constant="30" id="9MM-JB-SPV"/>
+                            <constraint firstItem="I4z-QK-wAe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Irc-Ig-ieM"/>
+                            <constraint firstItem="ZmV-6U-ONx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="hPI-Pa-c07"/>
+                            <constraint firstItem="ZmV-6U-ONx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oaS-U3-eWm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="gearshape" catalog="system" id="kMM-Aa-l69"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userImage" destination="ZmV-6U-ONx" id="PEq-Sl-OZC"/>
+                        <outlet property="userNameLabel" destination="I4z-QK-wAe" id="HjO-Qm-ohQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

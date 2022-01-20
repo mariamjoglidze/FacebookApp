@@ -61,6 +61,8 @@ class SignInSceneViewController: BaseViewController, LoginButtonDelegate {
 
     }
     
-    
+    func fetchData(){
+ 
+}
 }
 

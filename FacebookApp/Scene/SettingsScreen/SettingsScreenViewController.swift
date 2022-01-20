@@ -42,7 +42,7 @@ class SettingsScreenViewController: BaseViewController {
                                     if let data = try? Data(contentsOf: url) { //here you get image data from url
                                         //generate image from data and assign it to your profile imageview
                                         self.userImage.image = UIImage(data: data)
-                                        self.userImage.layer.cornerRadius = 10
+                                        self.userImage.layer.cornerRadius = self.userImage.bounds.width / 2
                                     }
                                 }
                             }

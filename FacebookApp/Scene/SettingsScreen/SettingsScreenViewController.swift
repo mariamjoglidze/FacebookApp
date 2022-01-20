@@ -34,9 +34,9 @@ class SettingsScreenViewController: BaseViewController {
                     {
                         if let data : [String: Any] = pictureData["data"] as? [String: Any]
                         {
-                            print(data)
+                            print(userresult)
                             print(dictData["email"]!)
-        
+
                             if let pictureURL = data["url"]{
                                 if let url = URL(string: pictureURL as! String) {
                                     if let data = try? Data(contentsOf: url) { //here you get image data from url
@@ -45,6 +45,10 @@ class SettingsScreenViewController: BaseViewController {
                                         self.userImage.layer.cornerRadius = 10
                                     }
                                 }
+                            }
+                            
+                            if let userName = dictData["name"]{
+                                self.userNameLabel.text = userName as! String
                             }
                         }
                     }

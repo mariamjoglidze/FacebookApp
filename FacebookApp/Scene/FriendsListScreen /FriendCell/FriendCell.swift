@@ -15,7 +15,7 @@ class FriendCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        friendImage.layer.cornerRadius = friendImage.bounds.width / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -24,4 +24,11 @@ class FriendCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(with friend: Friend){
+        friendNameLabel.text = friend.name
+        let url = URL(string: friend.picture as! String ?? "")
+        if let data = try? Data(contentsOf: url!) {
+                self.friendImage.image = UIImage(data: data)
+            }
+}
 }

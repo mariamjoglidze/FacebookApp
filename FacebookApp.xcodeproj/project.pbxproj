@@ -32,6 +32,7 @@
 		39FF042F2799B025006B5319 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042D2799B025006B5319 /* FriendCell.xib */; };
 		39FF04332799B822006B5319 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* VideoCell.swift */; };
 		39FF04342799B822006B5319 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* VideoCell.xib */; };
+		39FF0436279ABE64006B5319 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0435279ABE64006B5319 /* Friend.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		39FF042D2799B025006B5319 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		39FF04312799B822006B5319 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		39FF04322799B822006B5319 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		39FF0435279ABE64006B5319 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				39D5C5672795692D002F49BC /* Models */,
+				39FF0435279ABE64006B5319 /* Friend.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
 				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
+				39FF0436279ABE64006B5319 /* Friend.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
 				39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */,
 			);

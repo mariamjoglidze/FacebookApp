@@ -39,7 +39,7 @@ class SignInSceneViewController: UIViewController, LoginButtonDelegate {
     
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        let token = "EAAHLlZCGjQWYBABI5LJVcuQb7ReGSBDt9bYPOqgt08Fb4AOlb3TASZALZB8iZAOZA71WoLU6ax9y7VrE4GjuiGNKyfEpiTC5t9vVlG2EoNsIN4glWc1BqYUGRSBp4huZAMZCmu4MSrv64JDhsybcptEtvM0A2cjYqw7fif7ydWHWWIuVlu6NNzmr6gZBRwZAUZBV6BG2xRXTpUDnoueHWkbwy3"
+        let token = "EAAHLlZCGjQWYBAF52pgi6eKMPzmQ6c13pt7OYjsxI2WoHtv31mPYWzVkUqXHF40C7iPhzMUcO5AZAeuHIB9zoZAkwGF58uZABnHY7iwCFm8jSZCqzLVmoJt1ZAwjqLZBWi7zhHZCELlQIh4zHpxrg7OIBTgQ6PHtC7Sk0vb9oo9ZA2ilLZAnpvD3UgOHeFdl1PmQ7JrKAuh9v8joBBPq0WGHzN"
         let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
                                                  parameters: ["fields": "email, name"],
                                                  tokenString: token,

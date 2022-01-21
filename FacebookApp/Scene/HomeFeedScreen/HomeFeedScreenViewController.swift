@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeFeedScreenViewController: BaseViewController {
+class HomeFeedScreenViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     

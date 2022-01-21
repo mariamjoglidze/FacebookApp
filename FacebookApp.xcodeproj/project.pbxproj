@@ -17,10 +17,6 @@
 		39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FB2796C937006B5319 /* Assets.xcassets */; };
 		39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FE2796E930006B5319 /* TabBar.storyboard */; };
 		39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04002796E96E006B5319 /* TabBarViewController.swift */; };
-		39FF040827994D7B006B5319 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040727994D7B006B5319 /* Storyboarded.swift */; };
-		39FF040A27994D85006B5319 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040927994D85006B5319 /* AppCoordinator.swift */; };
-		39FF040C27994D98006B5319 /* CoordinatorDeleegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */; };
-		39FF040E27994DA4006B5319 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF040D27994DA4006B5319 /* Coordinator.swift */; };
 		39FF041127994E30006B5319 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041027994E2F006B5319 /* Strings.swift */; };
 		39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */; };
 		39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */; };
@@ -30,7 +26,6 @@
 		39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */; };
 		39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */; };
 		39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042027994F74006B5319 /* SettingsScreenViewController.swift */; };
-		39FF042427994FF9006B5319 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042327994FF9006B5319 /* BaseViewController.swift */; };
 		39FF042827998854006B5319 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042627998854006B5319 /* FeedCell.swift */; };
 		39FF042927998854006B5319 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042727998854006B5319 /* FeedCell.xib */; };
 		39FF042E2799B025006B5319 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042C2799B025006B5319 /* FriendCell.swift */; };
@@ -53,10 +48,6 @@
 		39FF03FB2796C937006B5319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39FF03FE2796E930006B5319 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		39FF04002796E96E006B5319 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		39FF040727994D7B006B5319 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		39FF040927994D85006B5319 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDeleegate.swift; sourceTree = "<group>"; };
-		39FF040D27994DA4006B5319 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		39FF041027994E2F006B5319 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeFeedScreen.storyboard; sourceTree = "<group>"; };
 		39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +57,6 @@
 		39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListScreenViewController.swift; sourceTree = "<group>"; };
 		39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
 		39FF042027994F74006B5319 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
-		39FF042327994FF9006B5319 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		39FF042627998854006B5319 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		39FF042727998854006B5319 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		39FF042C2799B025006B5319 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
@@ -142,7 +132,6 @@
 		39D5C55E27956604002F49BC /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				39FF042227994FED006B5319 /* Base */,
 				39D5C5602795664B002F49BC /* LaunchScreen */,
 				39D5C55F27956615002F49BC /* SignIn */,
 				39FF03FD2796E91D006B5319 /* TabBarController */,
@@ -185,7 +174,6 @@
 				39D5C5652795691A002F49BC /* Utilities */,
 				39D5C563279568F5002F49BC /* Network */,
 				39D5C56427956900002F49BC /* Extensions */,
-				39FF040627994D61006B5319 /* Coordinator */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -302,31 +290,12 @@
 			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
-		39FF040627994D61006B5319 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				39FF040727994D7B006B5319 /* Storyboarded.swift */,
-				39FF040927994D85006B5319 /* AppCoordinator.swift */,
-				39FF040B27994D98006B5319 /* CoordinatorDeleegate.swift */,
-				39FF040D27994DA4006B5319 /* Coordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		39FF040F27994E24006B5319 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
 				39FF041027994E2F006B5319 /* Strings.swift */,
 			);
 			path = Strings;
-			sourceTree = "<group>";
-		};
-		39FF042227994FED006B5319 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				39FF042327994FF9006B5319 /* BaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		39FF0425279967D2006B5319 /* FeedCell */ = {
@@ -498,21 +467,16 @@
 				39FF041127994E30006B5319 /* Strings.swift in Sources */,
 				39FF042827998854006B5319 /* FeedCell.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
-				39FF040E27994DA4006B5319 /* Coordinator.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */,
 				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
-				39FF040A27994D85006B5319 /* AppCoordinator.swift in Sources */,
 				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
-				39FF040C27994D98006B5319 /* CoordinatorDeleegate.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
 				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
-				39FF042427994FF9006B5319 /* BaseViewController.swift in Sources */,
 				39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */,
-				39FF040827994D7B006B5319 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

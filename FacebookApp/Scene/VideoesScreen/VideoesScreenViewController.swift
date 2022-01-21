@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VideoesScreenViewController: BaseViewController {
+class VideoesScreenViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     

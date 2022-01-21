@@ -9,7 +9,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class SettingsScreenViewController: BaseViewController {
+class SettingsScreenViewController: UIViewController {
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
@@ -22,7 +22,14 @@ class SettingsScreenViewController: BaseViewController {
     }
     
     func getFacebookProfileInfo() {
-        let requestMe = GraphRequest.init(graphPath: "me", parameters: ["fields" : "id,name,email,picture.type(large)"])
+//        let requestMe = GraphRequest.init(graphPath: "me", parameters: ["fields" : "id,name,email,picture.type(large)"])
+        let requestMe = GraphRequest(graphPath: "me",
+                                        parameters: ["fields" : "id,name,email,picture.type(large)"],
+                                        tokenString: "EAAHLlZCGjQWYBABI5LJVcuQb7ReGSBDt9bYPOqgt08Fb4AOlb3TASZALZB8iZAOZA71WoLU6ax9y7VrE4GjuiGNKyfEpiTC5t9vVlG2EoNsIN4glWc1BqYUGRSBp4huZAMZCmu4MSrv64JDhsybcptEtvM0A2cjYqw7fif7ydWHWWIuVlu6NNzmr6gZBRwZAUZBV6BG2xRXTpUDnoueHWkbwy3",
+                                        version: nil,
+                                        httpMethod: .get)
+
+
         let connection = GraphRequestConnection()
         connection.add(requestMe, completion:{ (connectn, userresult, error) in
             
@@ -35,7 +42,6 @@ class SettingsScreenViewController: BaseViewController {
                         if let data : [String: Any] = pictureData["data"] as? [String: Any]
                         {
                             print(userresult)
-                            print(dictData["email"]!)
 
                             if let pictureURL = data["url"]{
                                 if let url = URL(string: pictureURL as! String) {

@@ -32,17 +32,14 @@ class FriendsListScreenViewController: UIViewController {
         
         let requestMe = GraphRequest(graphPath: "me/friends",
                                      parameters: ["fields" : "id,name, picture.type(large)"],
-                                     tokenString: "EAAHLlZCGjQWYBAF52pgi6eKMPzmQ6c13pt7OYjsxI2WoHtv31mPYWzVkUqXHF40C7iPhzMUcO5AZAeuHIB9zoZAkwGF58uZABnHY7iwCFm8jSZCqzLVmoJt1ZAwjqLZBWi7zhHZCELlQIh4zHpxrg7OIBTgQ6PHtC7Sk0vb9oo9ZA2ilLZAnpvD3UgOHeFdl1PmQ7JrKAuh9v8joBBPq0WGHzN",
+                                     tokenString: "EAAHLlZCGjQWYBAHa2U8utqsUMgr8CWLQK2zgHYaKxmKFPr7VnGcPI4l1DQK2o9iGwZBokpNJvtDb79k3wKDxZBYfuG81PdIsR2sbFAyNZCMgyOctqtLxzMEST2pDmBMAfYSa4T7UfZCGDYfZC6G04cYzet9wUbAleFTO7QbZBCzZBJTsZBffLCkJmvM1jj0HitZAlXGFMDc2MTia49cgCXdF3F",
                                      version: nil,
                                      httpMethod: .get)
         
         
         requestMe.start(completion:{ connection, result, error in
-            //            print(result)
             
             if let data: [String: Any] = result as? [String: Any] {
-                //                print("daataa: \(data)")
-                print(data["data"])
                 DispatchQueue.main.async
                 {
                     if let array = data["data"] as? [[String: Any]]{

@@ -33,6 +33,7 @@
 		39FF04332799B822006B5319 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* VideoCell.swift */; };
 		39FF04342799B822006B5319 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* VideoCell.xib */; };
 		39FF0436279ABE64006B5319 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0435279ABE64006B5319 /* Friend.swift */; };
+		39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		39FF04312799B822006B5319 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		39FF04322799B822006B5319 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		39FF0435279ABE64006B5319 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				39D5C5672795692D002F49BC /* Models */,
-				39FF0435279ABE64006B5319 /* Friend.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +217,7 @@
 		39D5C5672795692D002F49BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				39FF0435279ABE64006B5319 /* Friend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,9 +269,9 @@
 		39FF04032796EA5D006B5319 /* VideoesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				39FF04302799B80E006B5319 /* VideoCell */,
 				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
 				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
+				39FF04302799B80E006B5319 /* VideoCell */,
 			);
 			path = VideoesScreen;
 			sourceTree = "<group>";
@@ -277,9 +279,9 @@
 		39FF04042796EA78006B5319 /* FriendsListScreen  */ = {
 			isa = PBXGroup;
 			children = (
-				39FF042B2799B007006B5319 /* FriendCell */,
 				39FF041A27994F4E006B5319 /* FriendsListScreen.storyboard */,
 				39FF041C27994F5C006B5319 /* FriendsListScreenViewController.swift */,
+				39FF042B2799B007006B5319 /* FriendCell */,
 			);
 			path = "FriendsListScreen ";
 			sourceTree = "<group>";
@@ -287,6 +289,7 @@
 		39FF04052796EA92006B5319 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				39FF0437279AE8CA006B5319 /* ViewModel */,
 				39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */,
 				39FF042027994F74006B5319 /* SettingsScreenViewController.swift */,
 			);
@@ -333,6 +336,14 @@
 				39FF04312799B822006B5319 /* VideoCell.swift */,
 			);
 			path = VideoCell;
+			sourceTree = "<group>";
+		};
+		39FF0437279AE8CA006B5319 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4EFD49984AC31E6C05BBD02B /* Frameworks */ = {
@@ -471,6 +482,7 @@
 				39FF042827998854006B5319 /* FeedCell.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
+				39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */,
 				39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */,
 				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,

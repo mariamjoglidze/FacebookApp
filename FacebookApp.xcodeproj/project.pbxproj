@@ -332,8 +332,8 @@
 		39FF0425279967D2006B5319 /* FeedCell */ = {
 			isa = PBXGroup;
 			children = (
-				39FF042627998854006B5319 /* FeedCell.swift */,
 				39FF042727998854006B5319 /* FeedCell.xib */,
+				39FF042627998854006B5319 /* FeedCell.swift */,
 			);
 			path = FeedCell;
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 		39FF042B2799B007006B5319 /* FriendCell */ = {
 			isa = PBXGroup;
 			children = (
-				39FF042C2799B025006B5319 /* FriendCell.swift */,
 				39FF042D2799B025006B5319 /* FriendCell.xib */,
+				39FF042C2799B025006B5319 /* FriendCell.swift */,
 			);
 			path = FriendCell;
 			sourceTree = "<group>";
@@ -357,8 +357,8 @@
 		39FF04302799B80E006B5319 /* VideoCell */ = {
 			isa = PBXGroup;
 			children = (
-				39FF04312799B822006B5319 /* VideoCell.swift */,
 				39FF04322799B822006B5319 /* VideoCell.xib */,
+				39FF04312799B822006B5319 /* VideoCell.swift */,
 			);
 			path = VideoCell;
 			sourceTree = "<group>";

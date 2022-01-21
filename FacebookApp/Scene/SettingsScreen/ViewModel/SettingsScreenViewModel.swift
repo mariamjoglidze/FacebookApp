@@ -10,7 +10,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 protocol SettingsScreenViewModelProtocol {
-    var imageData:  ((Data)->())? {get set}
+    var imageData: ((Data)->())? {get set}
     var userName: ((String)->())? {get set}
     
     func getFacebookInfo()
@@ -19,7 +19,6 @@ protocol SettingsScreenViewModelProtocol {
 class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
     var imageData:  ((Data)->())?
     var userName: ((String)->())?
-    
     
     func getFacebookInfo(){
         

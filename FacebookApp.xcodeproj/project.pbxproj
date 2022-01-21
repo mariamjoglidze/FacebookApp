@@ -292,9 +292,9 @@
 		39FF04052796EA92006B5319 /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				39FF0437279AE8CA006B5319 /* ViewModel */,
 				39FF041E27994F6B006B5319 /* SettingsScreen.storyboard */,
 				39FF042027994F74006B5319 /* SettingsScreenViewController.swift */,
+				39FF0437279AE8CA006B5319 /* ViewModel */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";

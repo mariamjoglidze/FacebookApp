@@ -19,14 +19,14 @@ protocol VideoScreenViewModelProtocol {
 
 
 class VideoScreenViewModel: VideoScreenViewModelProtocol {
-    var video = Video(message: "", source: "")
+    var video = Video(message: "", picture: "", source: "")
     var videoArray = [Video]()
     var showLoading: (()->())?
     
 func fetchVideo(completion: @escaping ([Video]) -> Void) {
     showLoading?()
     let requestMe = GraphRequest(graphPath: "me/posts",
-                                 parameters: [Strings.fields : "id,message, source"],
+                                 parameters: [Strings.fields : "id,message, source, picture.type(large)"],
                                  tokenString: Strings.token,
                                  version: nil,
                                  httpMethod: .get)
@@ -42,8 +42,10 @@ func fetchVideo(completion: @escaping ([Video]) -> Void) {
                     for getVideo in array {
                         self.video.message = getVideo["message"] as? String ?? Strings.emptyString
                         self.video.source = getVideo["source"] as? String ?? Strings.emptyString
+                        self.video.picture = getVideo["picture"] as? String ?? Strings.emptyString
+                        if self.video.source != ""{
                         self.videoArray.append(self.video)
-
+                        }
                     }
                     completion(self.videoArray)
                 }

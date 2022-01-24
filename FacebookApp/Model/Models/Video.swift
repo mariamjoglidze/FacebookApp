@@ -9,5 +9,6 @@ import Foundation
 
 struct Video {
     var message: String
+    var picture: String
     var source: String
 }

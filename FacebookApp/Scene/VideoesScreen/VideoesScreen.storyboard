@@ -20,6 +20,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="qXa-u5-4kn">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,6 +37,7 @@
                     <tabBarItem key="tabBarItem" title="" image="video" catalog="system" id="6iI-hh-0Ma"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="spinner" destination="qXa-u5-4kn" id="P4n-IL-iZr"/>
                         <outlet property="tableView" destination="4O3-kC-31V" id="rq2-87-A5D"/>
                     </connections>
                 </viewController>

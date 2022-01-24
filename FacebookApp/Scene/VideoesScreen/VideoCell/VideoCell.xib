@@ -78,6 +78,7 @@
                 <outlet property="commentLabel" destination="dbb-E8-gSy" id="WiE-J4-B96"/>
                 <outlet property="likeLabel" destination="S3i-nv-9Fx" id="FcP-Wi-xM5"/>
                 <outlet property="videoDescriptionLabel" destination="eOD-fd-OWZ" id="Olf-4s-qKp"/>
+                <outlet property="videoImage" destination="mfv-2a-65m" id="a6X-ZV-BnL"/>
             </connections>
             <point key="canvasLocation" x="-100.00000000000001" y="185.49107142857142"/>
         </tableViewCell>

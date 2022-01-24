@@ -12,6 +12,7 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var videoDescriptionLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var videoImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +23,12 @@ class VideoCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+ 
+    func configure(with video: Video){
+        videoDescriptionLabel.text = video.message
+        let url = URL(string: video.picture as! String ?? "")
+        if let data = try? Data(contentsOf: url!) {
+                self.videoImage.image = UIImage(data: data)
+            }
+     }
 }

@@ -7,23 +7,26 @@
 
 import UIKit
 import FBSDKLoginKit
+import AVKit
+import AVFoundation
 
 class VideoesScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var videoScreenViewModel: VideoScreenViewModelProtocol!
     var videoArray: [Video] = []{
-            didSet {
-                spinner.isHidden = true
-                self.tableView.reloadData()
-            }
+        didSet {
+            spinner.isHidden = true
+            self.tableView.reloadData()
         }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.registerNib(class: VideoCell.self)
         setupViewModel()
     }
@@ -39,12 +42,25 @@ class VideoesScreenViewController: UIViewController {
 
 extension VideoesScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videoArray.count   }
+        return videoArray.count
+        
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.deque(class: VideoCell.self, for: indexPath)
-        
+        cell.configure(with: videoArray[indexPath.row])
         return cell
     }
 }
 
+extension VideoesScreenViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let url = URL(string: videoArray[indexPath.row].source) else {return}
+        let player = AVPlayer(url: url)
+        var playerController = AVPlayerViewController()
+        playerController.player = player
+        playerController.allowsPictureInPicturePlayback = true
+        playerController.player?.play()
+        self.present(playerController, animated: true, completion: nil)
+    }
+}

@@ -30,4 +30,12 @@ class FeedCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(with feed: Feed){
+        postDescriptionLabel.text = feed.message
+        let url = URL(string: feed.picture as! String ?? "")
+        if let data = try? Data(contentsOf: url!) {
+                self.postImage.image = UIImage(data: data)
+            }
+    }
+    
 }

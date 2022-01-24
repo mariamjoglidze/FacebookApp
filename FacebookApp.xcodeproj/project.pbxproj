@@ -38,6 +38,7 @@
 		39FF043F279AFF45006B5319 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF043E279AFF45006B5319 /* UserDefaultsManager.swift */; };
 		39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */; };
 		39FF0444279E958D006B5319 /* HomeFeedScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */; };
+		39FF0446279E9835006B5319 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0445279E9835006B5319 /* Feed.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		39FF043E279AFF45006B5319 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewModel.swift; sourceTree = "<group>"; };
+		39FF0445279E9835006B5319 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				39FF0435279ABE64006B5319 /* Friend.swift */,
+				39FF0445279E9835006B5319 /* Feed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */,
 				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
+				39FF0446279E9835006B5319 /* Feed.swift in Sources */,
 				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
 				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,

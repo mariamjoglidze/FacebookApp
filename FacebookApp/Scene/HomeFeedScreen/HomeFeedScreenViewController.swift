@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FBSDKLoginKit
 class HomeFeedScreenViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,7 +16,25 @@ class HomeFeedScreenViewController: UIViewController {
 
         tableView.dataSource = self
         tableView.registerNib(class: FeedCell.self)
+        fetchHomeFeed()
+    }
+    func fetchHomeFeed(){
+        let requestMe = GraphRequest(graphPath: "me/feed",
+                                     parameters: [Strings.fields : "id,name, picture.type(large)"],
+                                     tokenString: Strings.token,
+                                     version: nil,
+                                     httpMethod: .get)
         
+        requestMe.start(completion:{ connection, result, error in
+            print("-------------------------------------------------")
+            print(result)
+            if let data: [String: Any] = result as? [String: Any] {
+                DispatchQueue.main.async
+                {
+                   
+                }
+            }
+        })
     }
     
 }

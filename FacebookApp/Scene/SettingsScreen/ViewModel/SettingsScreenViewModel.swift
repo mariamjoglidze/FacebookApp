@@ -12,19 +12,27 @@ import FBSDKLoginKit
 protocol SettingsScreenViewModelProtocol {
     var imageData: ((Data)->())? {get set}
     var userName: ((String)->())? {get set}
-    
+    var showLoading: (()->())? {get set}
+    var hideLoading: (()->())? {get set}
+    var navigate: (()->())? {get set}
+
     func getFacebookInfo()
+    func logOut()
 }
 
 class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
     var imageData:  ((Data)->())?
     var userName: ((String)->())?
-    
+    var showLoading: (()->())?
+    var hideLoading: (()->())?
+    var navigate: (()->())?
+
+
     func getFacebookInfo(){
-        
-        let requestMe = GraphRequest(graphPath: "me",
-                                     parameters: ["fields" : "id,name,email,picture.type(large)"],
-                                     tokenString: "EAAHLlZCGjQWYBAHa2U8utqsUMgr8CWLQK2zgHYaKxmKFPr7VnGcPI4l1DQK2o9iGwZBokpNJvtDb79k3wKDxZBYfuG81PdIsR2sbFAyNZCMgyOctqtLxzMEST2pDmBMAfYSa4T7UfZCGDYfZC6G04cYzet9wUbAleFTO7QbZBCzZBJTsZBffLCkJmvM1jj0HitZAlXGFMDc2MTia49cgCXdF3F",
+        showLoading?()
+        let requestMe = GraphRequest(graphPath: Strings.me,
+                                     parameters: [Strings.fields : "id,name,email,picture.type(large)"],
+                                     tokenString: Strings.token,
                                      version: nil,
                                      httpMethod: .get)
         
@@ -38,22 +46,33 @@ class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
                     {
                         if let data : [String: Any] = pictureData["data"] as? [String: Any]
                         {
-                            print(userresult)
                             if let pictureURL = data["url"]{
                                 if let url = URL(string: pictureURL as! String) {
                                     if let data = try? Data(contentsOf: url) {
                                         self.imageData!(data)
+                                        
                                     }
                                 }
                             }
                             if let userName = dictData["name"] as? String{
                                 self.userName!(userName)
+
                             }
                         }
                     }
+                    self.hideLoading?()
                 }
             }
         })
         connection.start()
+
+    }
+    
+    func logOut(){
+        let sb = UIStoryboard(name: Strings.signInScreen, bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: Strings.signInScreenViewController)
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        self.navigate?()
     }
 }

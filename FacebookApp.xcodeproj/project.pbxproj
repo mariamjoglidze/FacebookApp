@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C549279564AF002F49BC /* AppDelegate.swift */; };
 		39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54B279564AF002F49BC /* SceneDelegate.swift */; };
-		39D5C54E279564AF002F49BC /* SignInSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54D279564AF002F49BC /* SignInSceneViewController.swift */; };
-		39D5C551279564AF002F49BC /* SignInScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C54F279564AF002F49BC /* SignInScene.storyboard */; };
+		39D5C54E279564AF002F49BC /* SignInSceenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54D279564AF002F49BC /* SignInSceenViewController.swift */; };
+		39D5C551279564AF002F49BC /* SignInSceen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C54F279564AF002F49BC /* SignInSceen.storyboard */; };
 		39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C554279564B2002F49BC /* LaunchScreen.storyboard */; };
 		39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56B27956CB1002F49BC /* TableViewExtension.swift */; };
 		39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */; };
@@ -35,6 +35,9 @@
 		39FF0436279ABE64006B5319 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0435279ABE64006B5319 /* Friend.swift */; };
 		39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */; };
 		39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */; };
+		39FF043F279AFF45006B5319 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF043E279AFF45006B5319 /* UserDefaultsManager.swift */; };
+		39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */; };
+		39FF0444279E958D006B5319 /* HomeFeedScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +45,8 @@
 		39D5C546279564AF002F49BC /* FacebookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5C549279564AF002F49BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D5C54B279564AF002F49BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39D5C54D279564AF002F49BC /* SignInSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSceneViewController.swift; sourceTree = "<group>"; };
-		39D5C550279564AF002F49BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignInScene.storyboard; sourceTree = "<group>"; };
+		39D5C54D279564AF002F49BC /* SignInSceenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSceenViewController.swift; sourceTree = "<group>"; };
+		39D5C550279564AF002F49BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignInSceen.storyboard; sourceTree = "<group>"; };
 		39D5C555279564B2002F49BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D5C557279564B2002F49BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39D5C56B27956CB1002F49BC /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
@@ -69,6 +72,9 @@
 		39FF0435279ABE64006B5319 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListScreenViewModel.swift; sourceTree = "<group>"; };
+		39FF043E279AFF45006B5319 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
+		39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewModel.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,8 +158,9 @@
 		39D5C55F27956615002F49BC /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				39D5C54F279564AF002F49BC /* SignInScene.storyboard */,
-				39D5C54D279564AF002F49BC /* SignInSceneViewController.swift */,
+				39FF0440279C9C18006B5319 /* ViewModel */,
+				39D5C54F279564AF002F49BC /* SignInSceen.storyboard */,
+				39D5C54D279564AF002F49BC /* SignInSceenViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 		39D5C5652795691A002F49BC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				39FF043D279AFF27006B5319 /* UserDefaultsManager */,
 				39FF040F27994E24006B5319 /* Strings */,
 			);
 			path = Utilities;
@@ -319,6 +327,7 @@
 		39FF042A27999FA3006B5319 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -355,6 +364,22 @@
 				39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		39FF043D279AFF27006B5319 /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				39FF043E279AFF45006B5319 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		39FF0440279C9C18006B5319 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4EFD49984AC31E6C05BBD02B /* Frameworks */ = {
@@ -435,7 +460,7 @@
 				39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */,
 				39FF041B27994F4E006B5319 /* FriendsListScreen.storyboard in Resources */,
 				39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */,
-				39D5C551279564AF002F49BC /* SignInScene.storyboard in Resources */,
+				39D5C551279564AF002F49BC /* SignInSceen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +513,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D5C54E279564AF002F49BC /* SignInSceneViewController.swift in Sources */,
+				39D5C54E279564AF002F49BC /* SignInSceenViewController.swift in Sources */,
 				39FF041127994E30006B5319 /* Strings.swift in Sources */,
 				39FF042827998854006B5319 /* FeedCell.swift in Sources */,
+				39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */,
@@ -502,7 +528,9 @@
 				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */,
+				39FF043F279AFF45006B5319 /* UserDefaultsManager.swift in Sources */,
 				39FF0436279ABE64006B5319 /* Friend.swift in Sources */,
+				39FF0444279E958D006B5319 /* HomeFeedScreenViewModel.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
 				39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */,
 			);
@@ -511,12 +539,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		39D5C54F279564AF002F49BC /* SignInScene.storyboard */ = {
+		39D5C54F279564AF002F49BC /* SignInSceen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				39D5C550279564AF002F49BC /* Base */,
 			);
-			name = SignInScene.storyboard;
+			name = SignInSceen.storyboard;
 			sourceTree = "<group>";
 		};
 		39D5C554279564B2002F49BC /* LaunchScreen.storyboard */ = {
@@ -659,7 +687,7 @@
 				INFOPLIST_FILE = "FacebookApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignInScene;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInSceen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -688,7 +716,7 @@
 				INFOPLIST_FILE = "FacebookApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignInScene;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInSceen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

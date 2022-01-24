@@ -24,14 +24,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4FE713CE-9041-4FC7-B490-8F3D4DAD5110"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacebookApp/Scene/FriendsListScreen /FriendsListScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "setupViewModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "FacebookApp/Scene/FriendsListScreen /viewModel/FriendListScreenViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetchFriendList(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -55,16 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DBC1135A-3728-426F-A7E5-41297E7DB94E"
+            uuid = "2FDF7367-0878-4DBA-995F-1DF673EE8D32"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FacebookApp/Scene/FriendsListScreen /viewModel/FriendListScreenViewModel.swift"
+            filePath = "FacebookApp/Scene/SettingsScreen/SettingsScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "fetchFriendList(completion:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "logOutClicked(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

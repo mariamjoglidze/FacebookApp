@@ -16,45 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-6U-ONx">
-                                <rect key="frame" x="107" y="145.5" width="200" height="197.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-6U-ONx">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
                                 <color key="tintColor" red="0.10703241080000001" green="0.16758328680000001" blue="0.2196148634" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="rFT-M0-aYh"/>
                                     <constraint firstAttribute="width" constant="200" id="vPN-9J-rCe"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4z-QK-wAe">
-                                <rect key="frame" x="99.5" y="374" width="215.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4z-QK-wAe">
+                                <rect key="frame" x="207" y="374" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0FK-XF-wuu">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-SQ-9PR">
+                                <rect key="frame" x="20" y="745" width="374" height="38"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HpK-bi-bSn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9cc-SQ-9PR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0Ag-EF-iSc"/>
                             <constraint firstItem="I4z-QK-wAe" firstAttribute="top" secondItem="ZmV-6U-ONx" secondAttribute="bottom" constant="30" id="9MM-JB-SPV"/>
+                            <constraint firstItem="0FK-XF-wuu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GXF-OO-1L9"/>
                             <constraint firstItem="I4z-QK-wAe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Irc-Ig-ieM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9cc-SQ-9PR" secondAttribute="trailing" constant="20" id="YTK-jp-XBm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9cc-SQ-9PR" secondAttribute="bottom" constant="30" id="ZJq-Zm-8TN"/>
                             <constraint firstItem="ZmV-6U-ONx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="hPI-Pa-c07"/>
+                            <constraint firstItem="0FK-XF-wuu" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="lbG-sO-dWB"/>
                             <constraint firstItem="ZmV-6U-ONx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oaS-U3-eWm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="gearshape" catalog="system" id="kMM-Aa-l69"/>
+                    <tabBarItem key="tabBarItem" title="" image="gearshape" catalog="system" id="VrI-aC-rOA"/>
+                    <navigationItem key="navigationItem" id="0Wp-1E-nJ0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="logOutBtn" destination="9cc-SQ-9PR" id="VwU-Vr-3rs"/>
+                        <outlet property="spinner" destination="0FK-XF-wuu" id="XEB-gi-kri"/>
                         <outlet property="userImage" destination="ZmV-6U-ONx" id="PEq-Sl-OZC"/>
                         <outlet property="userNameLabel" destination="I4z-QK-wAe" id="HjO-Qm-ohQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="62"/>
+            <point key="canvasLocation" x="928.98550724637687" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

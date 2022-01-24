@@ -23,16 +23,10 @@
                             <constraint firstAttribute="width" constant="50" id="SUE-Kj-bgR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mariam Joglidze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-eO-3nD">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mariam Joglidze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-eO-3nD">
                         <rect key="frame" x="80" y="15" width="346" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12 Mutual Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnM-DD-LX6">
-                        <rect key="frame" x="80" y="43" width="346" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -40,19 +34,15 @@
                     <constraint firstItem="QpL-eO-3nD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="1iL-vY-Tc8"/>
                     <constraint firstItem="qQT-Um-7HJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3Gd-dj-BeS"/>
                     <constraint firstItem="qQT-Um-7HJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3ML-sY-oIb"/>
-                    <constraint firstAttribute="bottom" secondItem="cnM-DD-LX6" secondAttribute="bottom" constant="10" id="3q8-cb-QKm"/>
+                    <constraint firstAttribute="bottom" secondItem="qQT-Um-7HJ" secondAttribute="bottom" constant="14" id="4v7-Lv-AnQ"/>
                     <constraint firstItem="QpL-eO-3nD" firstAttribute="leading" secondItem="qQT-Um-7HJ" secondAttribute="trailing" constant="20" id="9dB-EQ-zOl"/>
-                    <constraint firstItem="cnM-DD-LX6" firstAttribute="trailing" secondItem="QpL-eO-3nD" secondAttribute="trailing" id="GMh-IV-KCf"/>
                     <constraint firstAttribute="trailing" secondItem="QpL-eO-3nD" secondAttribute="trailing" constant="20" id="Vdw-5o-TdI"/>
-                    <constraint firstItem="cnM-DD-LX6" firstAttribute="leading" secondItem="QpL-eO-3nD" secondAttribute="leading" id="dXa-2j-Ce7"/>
-                    <constraint firstItem="cnM-DD-LX6" firstAttribute="top" secondItem="QpL-eO-3nD" secondAttribute="bottom" constant="7" id="lPp-yj-WXq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="friendImage" destination="qQT-Um-7HJ" id="dyk-pT-qgg"/>
                 <outlet property="friendNameLabel" destination="QpL-eO-3nD" id="rwJ-uu-6Wy"/>
-                <outlet property="mutualFriendLabel" destination="cnM-DD-LX6" id="hXc-b3-YrQ"/>
             </connections>
             <point key="canvasLocation" x="-159" y="-28"/>
         </tableViewCell>

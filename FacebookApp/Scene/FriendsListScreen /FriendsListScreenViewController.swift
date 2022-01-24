@@ -10,9 +10,11 @@ import UIKit
 
 class FriendsListScreenViewController: UIViewController {
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var friendsArray:[Friend] = []{
             didSet {
+                spinner.isHidden = true
                 self.tableView.reloadData()
             }
         }
@@ -31,7 +33,8 @@ class FriendsListScreenViewController: UIViewController {
         viewModel.fetchFriendList { friends in
             self.friendsArray.append(contentsOf: friends)
         }
-        
+        viewModel.showLoading = { self.spinner.startAnimating() }
+
     }
     
    

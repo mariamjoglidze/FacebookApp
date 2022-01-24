@@ -7,8 +7,7 @@
 
 import UIKit
 import FBSDKLoginKit
-import AVKit
-import AVFoundation
+
 
 class VideoesScreenViewController: UIViewController {
     
@@ -36,6 +35,9 @@ class VideoesScreenViewController: UIViewController {
             self.videoArray.append(contentsOf: video)
         }
         videoScreenViewModel.showLoading = { self.spinner.startAnimating() }
+        videoScreenViewModel.presentVideo = { playerController in
+            self.present(playerController, animated: true, completion: nil)
+        }
     }
 }
 
@@ -55,12 +57,6 @@ extension VideoesScreenViewController: UITableViewDataSource {
 
 extension VideoesScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let url = URL(string: videoArray[indexPath.row].source) else {return}
-        let player = AVPlayer(url: url)
-        var playerController = AVPlayerViewController()
-        playerController.player = player
-        playerController.allowsPictureInPicturePlayback = true
-        playerController.player?.play()
-        self.present(playerController, animated: true, completion: nil)
+        videoScreenViewModel.playVideo(videoURL: videoArray[indexPath.row].source)
     }
 }

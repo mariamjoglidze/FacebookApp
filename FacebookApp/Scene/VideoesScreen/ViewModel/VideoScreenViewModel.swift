@@ -7,14 +7,18 @@
 
 import UIKit
 import FBSDKLoginKit
+import AVKit
+import AVFoundation
 
 protocol VideoScreenViewModelProtocol {
     var video: Video {get set}
     var videoArray: [Video] {get set}
     var showLoading: (()->())? {get set}
+    var presentVideo: ((AVPlayerViewController)->())? {get set}
+
     
     func fetchVideo(completion: @escaping ([Video]) -> Void)
-    
+    func playVideo(videoURL: String)
 }
 
 
@@ -22,7 +26,8 @@ class VideoScreenViewModel: VideoScreenViewModelProtocol {
     var video = Video(message: "", picture: "", source: "")
     var videoArray = [Video]()
     var showLoading: (()->())?
-    
+    var presentVideo: ((AVPlayerViewController)->())?
+
 func fetchVideo(completion: @escaping ([Video]) -> Void) {
     showLoading?()
     let requestMe = GraphRequest(graphPath: "me/posts",
@@ -53,4 +58,13 @@ func fetchVideo(completion: @escaping ([Video]) -> Void) {
         }
     })
 }
+    func playVideo(videoURL: String){
+        guard let url = URL(string: videoURL) else {return}
+        let player = AVPlayer(url: url)
+        var playerController = AVPlayerViewController()
+        playerController.player = player
+        playerController.allowsPictureInPicturePlayback = true
+        playerController.player?.play()
+        self.presentVideo?(playerController)
+    }
 }

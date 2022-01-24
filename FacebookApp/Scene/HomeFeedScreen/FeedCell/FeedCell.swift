@@ -9,8 +9,7 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
+   
     @IBOutlet weak var postDescriptionLabel: UILabel!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var likeImage: UIImageView!
@@ -20,7 +19,6 @@ class FeedCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        userImage.layer.cornerRadius = userImage.bounds.width / 2
 
     }
 

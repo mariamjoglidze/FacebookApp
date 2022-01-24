@@ -39,6 +39,8 @@
 		39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */; };
 		39FF0444279E958D006B5319 /* HomeFeedScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */; };
 		39FF0446279E9835006B5319 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0445279E9835006B5319 /* Feed.swift */; };
+		39FF0448279EE92D006B5319 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0447279EE92D006B5319 /* Video.swift */; };
+		39FF044B279EF028006B5319 /* VideoScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF044A279EF028006B5319 /* VideoScreenViewModel.swift */; };
 		3DED9180E88A518ABBBC28DB /* Pods_FacebookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF0443279E958D006B5319 /* HomeFeedScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF0445279E9835006B5319 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		39FF0447279EE92D006B5319 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		39FF044A279EF028006B5319 /* VideoScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoScreenViewModel.swift; sourceTree = "<group>"; };
 		75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.release.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.release.xcconfig"; sourceTree = "<group>"; };
 		B4134E389AF8E720393C5722 /* Pods-FacebookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookApp.debug.xcconfig"; path = "Target Support Files/Pods-FacebookApp/Pods-FacebookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B61196D877D5212FFDE43745 /* Pods_FacebookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +235,7 @@
 			children = (
 				39FF0435279ABE64006B5319 /* Friend.swift */,
 				39FF0445279E9835006B5319 /* Feed.swift */,
+				39FF0447279EE92D006B5319 /* Video.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 		39FF04032796EA5D006B5319 /* VideoesScreen */ = {
 			isa = PBXGroup;
 			children = (
+				39FF0449279EF011006B5319 /* ViewModel */,
 				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
 				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
 				39FF04302799B80E006B5319 /* VideoCell */,
@@ -381,6 +387,14 @@
 			isa = PBXGroup;
 			children = (
 				39FF0441279C9C2B006B5319 /* SignInScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39FF0449279EF011006B5319 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39FF044A279EF028006B5319 /* VideoScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -523,6 +537,7 @@
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */,
+				39FF0448279EE92D006B5319 /* Video.swift in Sources */,
 				39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */,
 				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
@@ -537,6 +552,7 @@
 				39FF0444279E958D006B5319 /* HomeFeedScreenViewModel.swift in Sources */,
 				39D5C56C27956CB1002F49BC /* TableViewExtension.swift in Sources */,
 				39FF041727994F13006B5319 /* VideoesScreenViewController.swift in Sources */,
+				39FF044B279EF028006B5319 /* VideoScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

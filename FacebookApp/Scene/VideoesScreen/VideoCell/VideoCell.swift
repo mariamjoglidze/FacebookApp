@@ -9,6 +9,7 @@ import UIKit
 
 class VideoCell: UITableViewCell {
 
+    @IBOutlet weak var videoDescriptionLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
     override func awakeFromNib() {

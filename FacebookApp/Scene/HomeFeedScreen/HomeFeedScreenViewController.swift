@@ -9,11 +9,12 @@ import UIKit
 import FBSDKLoginKit
 class HomeFeedScreenViewController: UIViewController {
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var homeFeedScreenViewModel: HomeFeedScreenViewModelProtocol!
     var feedArray: [Feed] = []{
             didSet {
-//                spinner.isHidden = true
+                spinner.isHidden = true
                 self.tableView.reloadData()
             }
         }
@@ -30,7 +31,7 @@ class HomeFeedScreenViewController: UIViewController {
         homeFeedScreenViewModel.fetchFeed { feed in
             self.feedArray.append(contentsOf: feed)
         }
-//        homeFeedScreenViewModel.showLoading = { self.spinner.startAnimating() }
+        homeFeedScreenViewModel.showLoading = { self.spinner.startAnimating() }
     }
       
     

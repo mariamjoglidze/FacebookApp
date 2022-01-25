@@ -7,7 +7,8 @@
 
 import UIKit
 import FBSDKLoginKit
-
+import AVKit
+import AVFoundation
 
 class VideoesScreenViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class VideoesScreenViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.registerNib(class: OldVideoCell.self)
         tableView.registerNib(class: VideoCell.self)
         setupViewModel()
     }
@@ -43,9 +45,10 @@ class VideoesScreenViewController: UIViewController {
 
 
 extension VideoesScreenViewController: UITableViewDataSource {
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videoArray.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,10 +56,14 @@ extension VideoesScreenViewController: UITableViewDataSource {
         cell.configure(with: videoArray[indexPath.row])
         return cell
     }
+    
 }
 
 extension VideoesScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        videoScreenViewModel.playVideo(videoURL: videoArray[indexPath.row].source)
+//        let cell = tableView.deque(class: VideoCell.self, for: indexPath)
+//        cell.playerView?.player?.play()
+
+        //        videoScreenViewModel.playVideo(videoURL: videoArray[indexPath.row].source)
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3929A32D279F2AA200D4F1B8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929A32C279F2AA200D4F1B8 /* PlayerView.swift */; };
+		3929A330279F2B3900D4F1B8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929A32E279F2B3900D4F1B8 /* VideoCell.swift */; };
+		3929A331279F2B3900D4F1B8 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3929A32F279F2B3900D4F1B8 /* VideoCell.xib */; };
 		39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C549279564AF002F49BC /* AppDelegate.swift */; };
 		39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54B279564AF002F49BC /* SceneDelegate.swift */; };
 		39D5C54E279564AF002F49BC /* SignInSceenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54D279564AF002F49BC /* SignInSceenViewController.swift */; };
@@ -30,8 +33,8 @@
 		39FF042927998854006B5319 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042727998854006B5319 /* FeedCell.xib */; };
 		39FF042E2799B025006B5319 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042C2799B025006B5319 /* FriendCell.swift */; };
 		39FF042F2799B025006B5319 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042D2799B025006B5319 /* FriendCell.xib */; };
-		39FF04332799B822006B5319 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* VideoCell.swift */; };
-		39FF04342799B822006B5319 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* VideoCell.xib */; };
+		39FF04332799B822006B5319 /* OldVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* OldVideoCell.swift */; };
+		39FF04342799B822006B5319 /* OldVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* OldVideoCell.xib */; };
 		39FF0436279ABE64006B5319 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0435279ABE64006B5319 /* Friend.swift */; };
 		39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */; };
 		39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3929A32C279F2AA200D4F1B8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3929A32E279F2B3900D4F1B8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		3929A32F279F2B3900D4F1B8 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		39D5C546279564AF002F49BC /* FacebookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5C549279564AF002F49BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D5C54B279564AF002F49BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +76,8 @@
 		39FF042727998854006B5319 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		39FF042C2799B025006B5319 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		39FF042D2799B025006B5319 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
-		39FF04312799B822006B5319 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		39FF04322799B822006B5319 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		39FF04312799B822006B5319 /* OldVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldVideoCell.swift; sourceTree = "<group>"; };
+		39FF04322799B822006B5319 /* OldVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldVideoCell.xib; sourceTree = "<group>"; };
 		39FF0435279ABE64006B5319 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListScreenViewModel.swift; sourceTree = "<group>"; };
@@ -105,6 +111,14 @@
 				75698ACF95FBC46689515613 /* Pods-FacebookApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3929A32B279F2A9100D4F1B8 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				3929A32C279F2AA200D4F1B8 /* PlayerView.swift */,
+			);
+			path = PlayerView;
 			sourceTree = "<group>";
 		};
 		39D5C53D279564AF002F49BC = {
@@ -216,6 +230,7 @@
 		39D5C5652795691A002F49BC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3929A32B279F2A9100D4F1B8 /* PlayerView */,
 				39FF043D279AFF27006B5319 /* UserDefaultsManager */,
 				39FF040F27994E24006B5319 /* Strings */,
 			);
@@ -353,8 +368,10 @@
 		39FF04302799B80E006B5319 /* VideoCell */ = {
 			isa = PBXGroup;
 			children = (
-				39FF04322799B822006B5319 /* VideoCell.xib */,
-				39FF04312799B822006B5319 /* VideoCell.swift */,
+				39FF04322799B822006B5319 /* OldVideoCell.xib */,
+				39FF04312799B822006B5319 /* OldVideoCell.swift */,
+				3929A32E279F2B3900D4F1B8 /* VideoCell.swift */,
+				3929A32F279F2B3900D4F1B8 /* VideoCell.xib */,
 			);
 			path = VideoCell;
 			sourceTree = "<group>";
@@ -469,13 +486,14 @@
 			files = (
 				39FF042927998854006B5319 /* FeedCell.xib in Resources */,
 				39FF041927994F22006B5319 /* VideoesScreen.storyboard in Resources */,
-				39FF04342799B822006B5319 /* VideoCell.xib in Resources */,
+				39FF04342799B822006B5319 /* OldVideoCell.xib in Resources */,
 				39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */,
 				39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */,
 				39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */,
 				39FF042F2799B025006B5319 /* FriendCell.xib in Resources */,
 				39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */,
 				39FF041B27994F4E006B5319 /* FriendsListScreen.storyboard in Resources */,
+				3929A331279F2B3900D4F1B8 /* VideoCell.xib in Resources */,
 				39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */,
 				39D5C551279564AF002F49BC /* SignInSceen.storyboard in Resources */,
 			);
@@ -533,7 +551,9 @@
 				39D5C54E279564AF002F49BC /* SignInSceenViewController.swift in Sources */,
 				39FF041127994E30006B5319 /* Strings.swift in Sources */,
 				39FF042827998854006B5319 /* FeedCell.swift in Sources */,
+				3929A32D279F2AA200D4F1B8 /* PlayerView.swift in Sources */,
 				39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */,
+				3929A330279F2B3900D4F1B8 /* VideoCell.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */,
@@ -544,7 +564,7 @@
 				39FF0446279E9835006B5319 /* Feed.swift in Sources */,
 				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
-				39FF04332799B822006B5319 /* VideoCell.swift in Sources */,
+				39FF04332799B822006B5319 /* OldVideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */,
 				39FF043F279AFF45006B5319 /* UserDefaultsManager.swift in Sources */,

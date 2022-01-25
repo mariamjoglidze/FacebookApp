@@ -29,14 +29,11 @@ class VideoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
+            }
     
     
     func configure(with video: Video){
@@ -90,7 +87,8 @@ class VideoCell: UITableViewCell {
         super.layoutSubviews()
         
         /// Resize video layer based on new frame
-        playerLayer.frame = CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.width))
+        playerLayer.frame = playerView.frame
+//        playerLayer.frame = CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.width))
     }
     
     private func loadVideoUsingURL(_ url: URL) {

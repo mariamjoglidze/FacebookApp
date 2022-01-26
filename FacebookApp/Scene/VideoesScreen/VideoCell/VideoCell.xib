@@ -45,7 +45,7 @@
                 <outlet property="playerView" destination="Np4-m1-hG8" id="ngA-Hf-tNG"/>
                 <outlet property="videoTitleLabel" destination="StR-uq-OOI" id="X1Q-Db-JOq"/>
             </connections>
-            <point key="canvasLocation" x="-164" y="173"/>
+            <point key="canvasLocation" x="61" y="156"/>
         </tableViewCell>
     </objects>
 </document>

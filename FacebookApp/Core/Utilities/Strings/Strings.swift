@@ -14,7 +14,7 @@ class Strings {
     static let failedVC             = "Failed to instantiate view controller"
     static let fromStoryboard       = " from storyboard "
     static let emptyString          = ""
-    static let token                = "EAAHLlZCGjQWYBAF7ZCObAFwCFZCfbpGVJ9KjqyBPdAo7H1mXzYpQHRWg19z2u0iSJguj4RLF9bHT4sCDwZBLvWVIprPrM17JrxM2gJZBLk0RsRDYAFtKaG2SGP8LE2rcelM7Bt0kLoB52xt10YZCWVCZAHZC8pAORLOIm9ENNj8vx9FLoP1sfho63ZArJGV3tizOZAp6lUlokZChK9gRyaZCcVLz"
+    static let token                = "EAAHLlZCGjQWYBAI5kqSkAPs86oFoMxdY2TRWKCzjqJRV9fx6J8yPCOkS327CSi0BnWIh4ZAuIYnlyUnJjH6BlIQmBafOnL3EkpfrsEjesdTRS2ZBBVTDhcZCmZBjblcIgTDZCLImjzAVfKckoxfIfnSauXoDNh9OoGaBCNP8bqqFAAp3fshD7jj4LHUyNBfQsxulBeZBC6m8WKSwkUODFuu"
 
     static let me                   = "me"
     static let fields               = "fields"

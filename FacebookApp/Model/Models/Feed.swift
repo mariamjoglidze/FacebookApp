@@ -12,4 +12,5 @@ struct Feed{
     var picture: String
     var likeCount: Int
     var commentCount: Int
+    var source: String
 }

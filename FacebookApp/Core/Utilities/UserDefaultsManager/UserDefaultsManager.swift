@@ -15,12 +15,10 @@ class UserDefaultsManager {
         
     }
     
-    static func retriveTokenFromUserDefaults() -> Bool{
-        if  let token = UserDefaults.standard.string(forKey: Strings.token) {
-            return true
-        } else {
-            return false
-        }
+    static func retriveTokenFromUserDefaults() -> String{
+        let token = UserDefaults.standard.string(forKey: Strings.token)
+        return token ?? ""
+        
     }
     
     static func deleteTokenFromUserDefaults(){

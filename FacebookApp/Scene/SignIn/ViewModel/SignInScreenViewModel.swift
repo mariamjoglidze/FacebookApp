@@ -10,15 +10,17 @@ import FBSDKLoginKit
 
 protocol SignInScreenViewModelProtocol {
     var navigate: (()->())? {get set}
-
+    var token: String {get set}
     func signIn()
 }
 
 class SignInScreenViewModel: SignInScreenViewModelProtocol {
     var navigate: (()->())?
-
+    var token = String()
+    
     func signIn(){
-        let token = Strings.token
+        
+        token = Strings.token
         let request = FBSDKLoginKit.GraphRequest(graphPath: Strings.me,
                                                  parameters: [Strings.fields: "email, name"],
                                                  tokenString: token,
@@ -27,7 +29,7 @@ class SignInScreenViewModel: SignInScreenViewModelProtocol {
         
         request.start(completion:{ connection, result, error in
             let loginManager = LoginManager()
-
+            
             let sb = UIStoryboard(name: Strings.tabBar, bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: Strings.tabBarViewController)
             loginManager.logIn(permissions: ["public_profile", "email"], viewController: vc) { result in

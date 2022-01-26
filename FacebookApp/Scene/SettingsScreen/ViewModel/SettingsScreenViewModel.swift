@@ -69,6 +69,7 @@ class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
     }
     
     func logOut(){
+        UserDefaultsManager.deleteTokenFromUserDefaults()
         let sb = UIStoryboard(name: Strings.signInScreen, bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: Strings.signInScreenViewController)
         UIApplication.shared.windows.first?.rootViewController = vc

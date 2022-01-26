@@ -13,13 +13,12 @@ class VideoCell: UITableViewCell {
     
     @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var videoTitleLabel: UILabel!
-    //////////////////
-    public var isPlaying: Bool = false
+   
+     var isPlaying: Bool = false
     private var queuePlayer = AVQueuePlayer()
     private var playerLayer = AVPlayerLayer()
     private var looperPlayer: AVPlayerLooper?
-    ////////////////
-    ///
+    
     public var videolink: URL? = nil {
         didSet {
             guard let link = videolink, oldValue != link else { return }
@@ -36,29 +35,21 @@ class VideoCell: UITableViewCell {
             }
     
     
-    func configure(with video: Video){
+    func configureVideo(with video: Video){
         videoTitleLabel.text = video.message
-        let url = NSURL(string: video.source)
-        let avPlayer = AVPlayer(url: url as! URL)
-        playerView?.playerLayer.player = avPlayer
-        //        playerView?.player?.play()
-        
+        videolink = NSURL(string: video.source) as URL?
     }
-    
-    func play(with video: Video){
-        //        let url = NSURL(string: video.source)
-        //        let avPlayer = AVPlayer(url: url as! URL)
-        //        playerView?.playerLayer.player = avPlayer
-        playerView?.player?.play()
+    func configureFeed(with video: Feed){
+        videoTitleLabel.text = video.message
+        videolink = NSURL(string: video.source) as URL?
     }
-    
-    
-    public func startPlaying() {
+
+    func startPlaying() {
         queuePlayer.play()
         isPlaying = true
     }
     
-    public func stopPlaying() {
+    func stopPlaying() {
         queuePlayer.pause()
         isPlaying = false
     }
@@ -85,10 +76,7 @@ class VideoCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        /// Resize video layer based on new frame
-        playerLayer.frame = playerView.frame
-//        playerLayer.frame = CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.width))
+                playerLayer.frame = playerView.frame
     }
     
     private func loadVideoUsingURL(_ url: URL) {

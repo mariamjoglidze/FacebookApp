@@ -18,7 +18,7 @@ protocol VideoScreenViewModelProtocol {
 
     
     func fetchVideo(completion: @escaping ([Video]) -> Void)
-    func playVideo(videoURL: String)
+//    func playVideo(videoURL: String)
 }
 
 
@@ -58,13 +58,13 @@ func fetchVideo(completion: @escaping ([Video]) -> Void) {
         }
     })
 }
-    func playVideo(videoURL: String){
-        guard let url = URL(string: videoURL) else {return}
-        let player = AVPlayer(url: url)
-        var playerController = AVPlayerViewController()
-        playerController.player = player
-        playerController.allowsPictureInPicturePlayback = true
-        playerController.player?.play()
-        self.presentVideo?(playerController)
-    }
+//    func playVideo(videoURL: String){
+//        guard let url = URL(string: videoURL) else {return}
+//        let player = AVPlayer(url: url)
+//        var playerController = AVPlayerViewController()
+//        playerController.player = player
+//        playerController.allowsPictureInPicturePlayback = true
+//        playerController.player?.play()
+//        self.presentVideo?(playerController)
+//    }
 }

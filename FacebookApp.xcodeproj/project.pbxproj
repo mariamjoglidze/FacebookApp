@@ -33,8 +33,6 @@
 		39FF042927998854006B5319 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042727998854006B5319 /* FeedCell.xib */; };
 		39FF042E2799B025006B5319 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF042C2799B025006B5319 /* FriendCell.swift */; };
 		39FF042F2799B025006B5319 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF042D2799B025006B5319 /* FriendCell.xib */; };
-		39FF04332799B822006B5319 /* OldVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04312799B822006B5319 /* OldVideoCell.swift */; };
-		39FF04342799B822006B5319 /* OldVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FF04322799B822006B5319 /* OldVideoCell.xib */; };
 		39FF0436279ABE64006B5319 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0435279ABE64006B5319 /* Friend.swift */; };
 		39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */; };
 		39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */; };
@@ -76,8 +74,6 @@
 		39FF042727998854006B5319 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		39FF042C2799B025006B5319 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		39FF042D2799B025006B5319 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
-		39FF04312799B822006B5319 /* OldVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldVideoCell.swift; sourceTree = "<group>"; };
-		39FF04322799B822006B5319 /* OldVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldVideoCell.xib; sourceTree = "<group>"; };
 		39FF0435279ABE64006B5319 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		39FF0438279AE8DA006B5319 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		39FF043B279AF56A006B5319 /* FriendListScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListScreenViewModel.swift; sourceTree = "<group>"; };
@@ -368,8 +364,6 @@
 		39FF04302799B80E006B5319 /* VideoCell */ = {
 			isa = PBXGroup;
 			children = (
-				39FF04322799B822006B5319 /* OldVideoCell.xib */,
-				39FF04312799B822006B5319 /* OldVideoCell.swift */,
 				3929A32E279F2B3900D4F1B8 /* VideoCell.swift */,
 				3929A32F279F2B3900D4F1B8 /* VideoCell.xib */,
 			);
@@ -486,7 +480,6 @@
 			files = (
 				39FF042927998854006B5319 /* FeedCell.xib in Resources */,
 				39FF041927994F22006B5319 /* VideoesScreen.storyboard in Resources */,
-				39FF04342799B822006B5319 /* OldVideoCell.xib in Resources */,
 				39FF041F27994F6B006B5319 /* SettingsScreen.storyboard in Resources */,
 				39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */,
 				39D5C556279564B2002F49BC /* LaunchScreen.storyboard in Resources */,
@@ -564,7 +557,6 @@
 				39FF0446279E9835006B5319 /* Feed.swift in Sources */,
 				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
-				39FF04332799B822006B5319 /* OldVideoCell.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */,
 				39FF043F279AFF45006B5319 /* UserDefaultsManager.swift in Sources */,

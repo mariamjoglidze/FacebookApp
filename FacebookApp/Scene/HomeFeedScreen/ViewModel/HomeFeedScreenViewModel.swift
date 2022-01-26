@@ -28,13 +28,9 @@ class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
                                      tokenString: Strings.token,
                                      version: nil,
                                      httpMethod: .get)
-        
-        
-        requestMe.start(completion:{ connection, result, error in
     
+        requestMe.start(completion:{ connection, result, error in
             if let data: [String: Any] = result as? [String: Any] {
-                print("---------------------")
-                print(data)
                 DispatchQueue.main.async
                 {
                     if let array = data["data"] as? [[String: Any]] {

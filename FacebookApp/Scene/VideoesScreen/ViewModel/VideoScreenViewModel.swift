@@ -16,11 +16,8 @@ protocol VideoScreenViewModelProtocol {
     var showLoading: (()->())? {get set}
     var presentVideo: ((AVPlayerViewController)->())? {get set}
 
-    
     func fetchVideo(completion: @escaping ([Video]) -> Void)
-//    func playVideo(videoURL: String)
 }
-
 
 class VideoScreenViewModel: VideoScreenViewModelProtocol {
     var video = Video(message: "", picture: "", source: "")
@@ -36,11 +33,8 @@ func fetchVideo(completion: @escaping ([Video]) -> Void) {
                                  version: nil,
                                  httpMethod: .get)
     
-    
     requestMe.start(completion:{ connection, result, error in
         if let data: [String: Any] = result as? [String: Any] {
-            print("---------------------")
-            print(data)
             DispatchQueue.main.async
             {
                 if let array = data["data"] as? [[String: Any]] {
@@ -58,13 +52,4 @@ func fetchVideo(completion: @escaping ([Video]) -> Void) {
         }
     })
 }
-//    func playVideo(videoURL: String){
-//        guard let url = URL(string: videoURL) else {return}
-//        let player = AVPlayer(url: url)
-//        var playerController = AVPlayerViewController()
-//        playerController.player = player
-//        playerController.allowsPictureInPicturePlayback = true
-//        playerController.player?.play()
-//        self.presentVideo?(playerController)
-//    }
 }

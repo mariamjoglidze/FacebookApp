@@ -41,10 +41,7 @@ class HomeFeedScreenViewController: UIViewController {
         }
         homeFeedScreenViewModel.showLoading = { self.spinner.startAnimating() }
     }
-    
-    
 }
-
 
 extension HomeFeedScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

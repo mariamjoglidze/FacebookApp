@@ -34,11 +34,7 @@ class FriendsListScreenViewController: UIViewController {
             self.friendsArray.append(contentsOf: friends)
         }
         viewModel.showLoading = { self.spinner.startAnimating() }
-
     }
-    
-   
-    
 }
 
 

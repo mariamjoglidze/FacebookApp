@@ -46,7 +46,6 @@ class VideoesScreenViewController: UIViewController {
     }
 }
 
-
 extension VideoesScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,7 +57,6 @@ extension VideoesScreenViewController: UITableViewDataSource {
         cell.configureVideo(with: videoArray[indexPath.row])
         return cell
     }
-    
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         let cells = tableView.visibleCells.compactMap({ $0 as? VideoCell })

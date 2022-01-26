@@ -19,7 +19,6 @@ class VideoCell: UITableViewCell {
     private var queuePlayer = AVQueuePlayer()
     private var playerLayer = AVPlayerLayer()
     private var looperPlayer: AVPlayerLooper?
-//    var player: AVPlayer?
     
     public var videolink: URL? = nil {
         didSet {
@@ -41,7 +40,6 @@ class VideoCell: UITableViewCell {
         print(videoSlider.value)
         let seconds : Int64 = Int64(videoSlider.value)
         let targetTime:CMTime = CMTimeMake(value: seconds, timescale: 1)
-        
         playerLayer.player!.seek(to: targetTime)
         
         if playerLayer.player!.rate == 0
@@ -70,10 +68,8 @@ class VideoCell: UITableViewCell {
         isPlaying = false
     }
     
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         commonInit()
     }
     
@@ -81,7 +77,6 @@ class VideoCell: UITableViewCell {
         
         queuePlayer.volume = 0.0
         queuePlayer.actionAtItemEnd = .none
-        
         playerLayer.videoGravity = .resizeAspect
         playerLayer.name = "videoLoopLayer"
         playerLayer.cornerRadius = 5.0
@@ -101,21 +96,16 @@ class VideoCell: UITableViewCell {
     }
     
     private func loadVideoUsingURL(_ url: URL) {
-        /// Load asset in background thread to avoid lagging
         DispatchQueue.global(qos: .background).async {
             let asset = AVURLAsset(url: url)
-            /// Load needed values asynchronously
             asset.loadValuesAsynchronously(forKeys: ["duration", "playable"]) {
-                /// UI actions should executed on the main thread
                 DispatchQueue.main.async { [weak self] in
                     guard let `self` = self else { return }
                     let item = AVPlayerItem(asset: asset)
                     if self.queuePlayer.currentItem != item {
                         self.queuePlayer.replaceCurrentItem(with: item)
                         self.looperPlayer = AVPlayerLooper(player: self.queuePlayer, templateItem: item)
-
                     }
-//                    self.player = AVPlayer(playerItem: item)
                     let duration : CMTime = item.asset.duration
                     let seconds : Float64 = CMTimeGetSeconds(duration)
                     let currentDuration : CMTime = item.currentTime()
@@ -129,19 +119,9 @@ class VideoCell: UITableViewCell {
                             self.videoSlider.value = Float ( time );
                                                     }
                         
-                        let playbackLikelyToKeepUp = self.playerLayer.player?.currentItem?.isPlaybackLikelyToKeepUp
-                        if playbackLikelyToKeepUp == false{
-                            print("IsBuffering")
-                        } else {
-                            //stop the activity indicator
-                            print("Buffering completed")
-                        }
-                        
                     }
                 }
             }
-     
-
         }
     }
 }

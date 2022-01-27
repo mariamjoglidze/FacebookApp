@@ -13,7 +13,6 @@ class VideoCell: UITableViewCell {
     
     @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var videoTitleLabel: UILabel!
-    @IBOutlet weak var playBtn: UIButton!
     
     var isPlaying: Bool = false
     private var queuePlayer = AVQueuePlayer()

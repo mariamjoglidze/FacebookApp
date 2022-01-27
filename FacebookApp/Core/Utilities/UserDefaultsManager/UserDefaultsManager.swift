@@ -16,14 +16,14 @@ class UserDefaultsManager {
     }
     
     static func retriveTokenFromUserDefaults() -> String{
-        let token = UserDefaults.standard.string(forKey: Strings.token)
+        let token = UserDefaults.standard.object(forKey: Strings.token) as? String
         return token ?? ""
         
     }
     
     static func deleteTokenFromUserDefaults(){
         UserDefaults.standard.removeObject(forKey: Strings.token)
-        
+        UserDefaults.standard.synchronize()
     }
 }
 

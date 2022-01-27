@@ -17,6 +17,7 @@ class SignInSceenViewController: UIViewController {
         super.viewDidLoad()
         setupSignInBtn()
         setupViewModel()
+        signInScreenViewModel.checkLogin()
     }
     
     func setupSignInBtn(){

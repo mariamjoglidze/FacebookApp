@@ -27,7 +27,6 @@ class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
     var hideLoading: (()->())?
     var navigate: (()->())?
 
-
     func getFacebookInfo(){
         showLoading?()
         let requestMe = GraphRequest(graphPath: Strings.me,
@@ -65,7 +64,6 @@ class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
             }
         })
         connection.start()
-
     }
     
     func logOut(){

@@ -31,9 +31,11 @@ class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
     
         requestMe.start(completion:{ connection, result, error in
             if let data: [String: Any] = result as? [String: Any] {
+                print(data)
                 DispatchQueue.main.async
                 {
                     if let array = data["data"] as? [[String: Any]] {
+                        
                         for getFeed in array {
                             self.feed.message = getFeed["message"] as? String ?? Strings.emptyString
                             self.feed.picture = getFeed["full_picture"] as? String ?? Strings.emptyString

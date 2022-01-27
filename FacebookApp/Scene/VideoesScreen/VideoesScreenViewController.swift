@@ -66,6 +66,16 @@ extension VideoesScreenViewController: UITableViewDataSource {
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if self.videoArray.count == indexPath.row + 1 {
+            let videoCount = self.videoArray.count
+            videoScreenViewModel.getNext { video in
+                self.videoArray.append(contentsOf: video)
+                self.tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension VideoesScreenViewController: UITableViewDelegate {

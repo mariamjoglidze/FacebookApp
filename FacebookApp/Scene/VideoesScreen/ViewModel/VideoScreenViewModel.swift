@@ -17,6 +17,8 @@ protocol VideoScreenViewModelProtocol {
     var presentVideo: ((AVPlayerViewController)->())? {get set}
     
     func fetchVideo(completion: @escaping ([Video]) -> Void)
+    func getNext(completion: @escaping ([Video]) -> Void)
+
 }
 
 class VideoScreenViewModel: VideoScreenViewModelProtocol {
@@ -24,7 +26,8 @@ class VideoScreenViewModel: VideoScreenViewModelProtocol {
     var videoArray = [Video]()
     var showLoading: (()->())?
     var presentVideo: ((AVPlayerViewController)->())?
-    
+    var nextLink : String?
+
     func fetchVideo(completion: @escaping ([Video]) -> Void) {
         showLoading?()
         let requestMe = GraphRequest(graphPath: "me/posts",
@@ -52,4 +55,32 @@ class VideoScreenViewModel: VideoScreenViewModelProtocol {
             }
         })
     }
+    
+    func getNext(completion: @escaping ([Video]) -> Void) {
+        var request: GraphRequest?
+        let pageDict = Utility.dictionary(withQuery: self.nextLink ?? "")
+        request = GraphRequest.init(graphPath: "me/feed", parameters: pageDict, httpMethod: .get)
+        request?.start(completion: { _, result, _ in
+            if let data: [String: Any] = result as? [String: Any] {
+                print(data)
+                DispatchQueue.main.async
+                {
+                    if let array = data["data"] as? [[String: Any]] {
+                        var nextArray = [Video]()
+                        for getVideo in array {
+                            self.video.message = getVideo["message"] as? String ?? Strings.emptyString
+                            self.video.picture = getVideo["picture"] as? String ?? Strings.emptyString
+                            self.video.source = getVideo["source"] as? String ?? Strings.emptyString
+                            nextArray.append(self.video)
+                        }
+                        if let paging = data["paging"] as? [String : String] {
+                            self.nextLink = paging["next"]
+                        }
+                        completion(nextArray)
+                    }
+                }
+            }
+        })
+    }
+
 }

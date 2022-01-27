@@ -47,7 +47,6 @@ class VideoCell: UITableViewCell {
         }
     }
     
-    
     func configureVideo(with video: Video){
         videoTitleLabel.text = video.message
         videolink = NSURL(string: video.source) as URL?
@@ -116,8 +115,7 @@ class VideoCell: UITableViewCell {
                         if self.playerLayer.player?.currentItem?.status == .readyToPlay {
                             let time : Float64 = CMTimeGetSeconds((self.playerLayer.player!.currentTime()));
                             self.videoSlider.value = Float ( time );
-                                                    }
-                        
+                        }
                     }
                 }
             }

@@ -18,7 +18,7 @@ func application(
         application,
         didFinishLaunchingWithOptions: launchOptions
     )
-
+    
     return true
 }
       

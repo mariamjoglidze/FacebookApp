@@ -17,8 +17,9 @@ class FeedCell: UITableViewCell {
     
     func configure(with feed: Feed){
         postDescriptionLabel.text = feed.message
-        let url = URL(string: feed.picture as! String ?? "")
-        if let data = try? Data(contentsOf: url!) {
+        
+        if  let url = URL(string: feed.picture),
+            let data = try? Data(contentsOf: url) {
                 self.postImage.image = UIImage(data: data)
             }
     }

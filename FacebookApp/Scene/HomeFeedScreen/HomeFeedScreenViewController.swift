@@ -44,8 +44,10 @@ class HomeFeedScreenViewController: UIViewController {
 }
 
 extension HomeFeedScreenViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return feedArray.count   }
+        return feedArray.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if feedArray[indexPath.row].source == "" {
@@ -67,6 +69,17 @@ extension HomeFeedScreenViewController: UITableViewDataSource {
                 }
             }
         }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if self.feedArray.count == indexPath.row + 1 {
+            let feedCount = self.feedArray.count
+            homeFeedScreenViewModel.getNext { feed in
+                self.feedArray.append(contentsOf: feed)
+                self.tableView.reloadData()
+            }
+        }
+            
+    }
     }
     
     extension HomeFeedScreenViewController: UITableViewDelegate {

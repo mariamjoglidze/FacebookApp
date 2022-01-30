@@ -20,7 +20,7 @@ class SignInScreenViewModel: SignInScreenViewModelProtocol {
     var token = String()
     
     func checkLogin() {
-        if UserDefaultsManager.retriveTokenFromUserDefaults() != "" {
+        if UserDefaultsManager.retriveTokenFromUserDefaults() != Strings.emptyString {
             let sb = UIStoryboard(name: Strings.tabBar, bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: Strings.tabBarViewController)
             let scenes = UIApplication.shared.connectedScenes
@@ -45,7 +45,6 @@ class SignInScreenViewModel: SignInScreenViewModelProtocol {
             
             request.start(completion:{ connection, result, error in
                 let loginManager = LoginManager()
-                
                 let sb = UIStoryboard(name: Strings.tabBar, bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: Strings.tabBarViewController)
                 loginManager.logIn(permissions: ["public_profile", "email"], viewController: vc) { result in

@@ -12,7 +12,7 @@ import RxCocoa
 
 
 class FriendListViewModel {
-    var friend = Friend(name: "", picture: "")
+    var friend = Friend(name: Strings.emptyString, picture: Strings.emptyString)
     var friends = [Friend]()
     var friendsArray: BehaviorRelay<[Friend]> = BehaviorRelay(value: [])
     
@@ -39,7 +39,6 @@ class FriendListViewModel {
                              self.friends.append(self.friend)
                              self.friendsArray.accept(self.friends)
                          }
-                         print(self.friendsArray)
                      }
                  }
              }

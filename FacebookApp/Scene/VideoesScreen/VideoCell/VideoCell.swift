@@ -76,7 +76,7 @@ class VideoCell: UITableViewCell {
         queuePlayer.volume = 0.0
         queuePlayer.actionAtItemEnd = .none
         playerLayer.videoGravity = .resizeAspect
-        playerLayer.name = "videoLoopLayer"
+//        playerLayer.name = "videoLoopLayer"
         playerLayer.cornerRadius = 5.0
         playerLayer.masksToBounds = true
         contentView.layer.addSublayer(playerLayer)

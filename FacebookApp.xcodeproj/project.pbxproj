@@ -19,7 +19,6 @@
 		39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */; };
 		39FF03FC2796C937006B5319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FB2796C937006B5319 /* Assets.xcassets */; };
 		39FF03FF2796E930006B5319 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF03FE2796E930006B5319 /* TabBar.storyboard */; };
-		39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF04002796E96E006B5319 /* TabBarViewController.swift */; };
 		39FF041127994E30006B5319 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041027994E2F006B5319 /* Strings.swift */; };
 		39FF041327994EE2006B5319 /* HomeFeedScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */; };
 		39FF041527994F04006B5319 /* HomeFeedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */; };
@@ -60,7 +59,6 @@
 		39D5C56D27956CC2002F49BC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
 		39FF03FB2796C937006B5319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39FF03FE2796E930006B5319 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		39FF04002796E96E006B5319 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		39FF041027994E2F006B5319 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		39FF041227994EE2006B5319 /* HomeFeedScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeFeedScreen.storyboard; sourceTree = "<group>"; };
 		39FF041427994F04006B5319 /* HomeFeedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreenViewController.swift; sourceTree = "<group>"; };
@@ -201,17 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				39D5C5652795691A002F49BC /* Utilities */,
-				39D5C563279568F5002F49BC /* Network */,
 				39D5C56427956900002F49BC /* Extensions */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		39D5C563279568F5002F49BC /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		39D5C56427956900002F49BC /* Extensions */ = {
@@ -279,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				39FF03FE2796E930006B5319 /* TabBar.storyboard */,
-				39FF04002796E96E006B5319 /* TabBarViewController.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -555,7 +544,6 @@
 				39FF041D27994F5C006B5319 /* FriendsListScreenViewController.swift in Sources */,
 				39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */,
 				39FF0446279E9835006B5319 /* Feed.swift in Sources */,
-				39FF04012796E96E006B5319 /* TabBarViewController.swift in Sources */,
 				39FF042127994F74006B5319 /* SettingsScreenViewController.swift in Sources */,
 				39FF042E2799B025006B5319 /* FriendCell.swift in Sources */,
 				39FF043C279AF56A006B5319 /* FriendListScreenViewModel.swift in Sources */,

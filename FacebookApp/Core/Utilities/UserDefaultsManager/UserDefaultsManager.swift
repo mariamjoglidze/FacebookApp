@@ -11,13 +11,12 @@ class UserDefaultsManager {
     
     static func saveTokenInUserDefaults(with token: String){
         UserDefaults.standard.set(token, forKey: Strings.token)
-        print("saved")
         
     }
     
     static func retriveTokenFromUserDefaults() -> String{
         let token = UserDefaults.standard.object(forKey: Strings.token) as? String
-        return token ?? ""
+        return token ?? Strings.emptyString
         
     }
     

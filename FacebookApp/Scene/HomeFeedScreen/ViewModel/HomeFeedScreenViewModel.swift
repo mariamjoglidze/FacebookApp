@@ -19,9 +19,8 @@ protocol HomeFeedScreenViewModelProtocol {
 
 class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
     var showLoading: (()->())?
-    var feed = Feed(message: "", picture: "", likeCount: 0, commentCount: 0, source: "")
+    var feed = Feed(message: Strings.emptyString, picture: Strings.emptyString, likeCount: 0, commentCount: 0, source: Strings.emptyString)
     var feedArray = [Feed]()
-    
     var nextLink : String?
     
     func fetchFeed(completion: @escaping ([Feed]) -> Void){
@@ -31,7 +30,7 @@ class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
                                      tokenString: Strings.token,
                                      version: nil,
                                      httpMethod: .get)
-    
+        
         requestMe.start(completion:{ connection, result, error in
             if let data: [String: Any] = result as? [String: Any] {
                 print(data)
@@ -57,11 +56,10 @@ class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
     
     func getNext(completion: @escaping ([Feed]) -> Void) {
         var request: GraphRequest?
-        let pageDict = Utility.dictionary(withQuery: self.nextLink ?? "")
+        let pageDict = Utility.dictionary(withQuery: self.nextLink ?? Strings.emptyString)
         request = GraphRequest.init(graphPath: "me/feed", parameters: pageDict, httpMethod: .get)
         request?.start(completion: { _, result, _ in
             if let data: [String: Any] = result as? [String: Any] {
-                print(data)
                 DispatchQueue.main.async
                 {
                     if let array = data["data"] as? [[String: Any]] {
@@ -81,7 +79,7 @@ class HomeFeedScreenViewModel: HomeFeedScreenViewModelProtocol {
             }
         })
     }
-
+    
     
     
 }

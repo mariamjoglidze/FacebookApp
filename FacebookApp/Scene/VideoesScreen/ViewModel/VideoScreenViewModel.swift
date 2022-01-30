@@ -22,7 +22,7 @@ protocol VideoScreenViewModelProtocol {
 }
 
 class VideoScreenViewModel: VideoScreenViewModelProtocol {
-    var video = Video(message: "", picture: "", source: "")
+    var video = Video(message: Strings.emptyString, picture: Strings.emptyString, source: Strings.emptyString)
     var videoArray = [Video]()
     var showLoading: (()->())?
     var presentVideo: ((AVPlayerViewController)->())?
@@ -58,11 +58,10 @@ class VideoScreenViewModel: VideoScreenViewModelProtocol {
     
     func getNext(completion: @escaping ([Video]) -> Void) {
         var request: GraphRequest?
-        let pageDict = Utility.dictionary(withQuery: self.nextLink ?? "")
+        let pageDict = Utility.dictionary(withQuery: self.nextLink ?? Strings.emptyString)
         request = GraphRequest.init(graphPath: "me/feed", parameters: pageDict, httpMethod: .get)
         request?.start(completion: { _, result, _ in
             if let data: [String: Any] = result as? [String: Any] {
-                print(data)
                 DispatchQueue.main.async
                 {
                     if let array = data["data"] as? [[String: Any]] {

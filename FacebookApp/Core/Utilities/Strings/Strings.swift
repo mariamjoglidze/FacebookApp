@@ -22,5 +22,5 @@ class Strings {
     static let tabBarViewController = "TabBarViewController"
     static let signInScreen         = "SignInSceen"
     static let signInScreenViewController = "SignInSceenViewController"
-
+    static let friendCell           = "FriendCell"
 }

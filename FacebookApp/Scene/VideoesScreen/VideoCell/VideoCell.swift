@@ -106,8 +106,6 @@ class VideoCell: UITableViewCell {
                     }
                     let duration : CMTime = item.asset.duration
                     let seconds : Float64 = CMTimeGetSeconds(duration)
-                    let currentDuration : CMTime = item.currentTime()
-                    let currentSeconds : Float64 = CMTimeGetSeconds(currentDuration)
                     self.videoSlider.maximumValue = Float(seconds)
                     self.videoSlider.isContinuous = true
                     

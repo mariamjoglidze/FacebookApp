@@ -72,7 +72,6 @@ extension HomeFeedScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if self.feedArray.count == indexPath.row + 1 {
-            let feedCount = self.feedArray.count
             homeFeedScreenViewModel.getNext { feed in
                 self.feedArray.append(contentsOf: feed)
                 self.tableView.reloadData()

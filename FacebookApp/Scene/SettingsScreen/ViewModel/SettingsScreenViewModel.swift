@@ -70,8 +70,11 @@ class SettingsScreenViewModel: SettingsScreenViewModelProtocol {
         UserDefaultsManager.deleteTokenFromUserDefaults()
         let sb = UIStoryboard(name: Strings.signInScreen, bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: Strings.signInScreenViewController)
-        UIApplication.shared.windows.first?.rootViewController = vc
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScenes = scenes.first as? UIWindowScene
+        let window = windowScenes?.windows.first
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
         self.navigate?()
     }
 }

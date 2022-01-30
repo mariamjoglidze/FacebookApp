@@ -23,8 +23,11 @@ class SignInScreenViewModel: SignInScreenViewModelProtocol {
         if UserDefaultsManager.retriveTokenFromUserDefaults() != "" {
             let sb = UIStoryboard(name: Strings.tabBar, bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: Strings.tabBarViewController)
-            UIApplication.shared.windows.first?.rootViewController = vc
-            UIApplication.shared.windows.first?.makeKeyAndVisible()
+            let scenes = UIApplication.shared.connectedScenes
+            let windowScenes = scenes.first as? UIWindowScene
+            let window = windowScenes?.windows.first
+            window?.rootViewController = vc
+            window?.makeKeyAndVisible()
             self.navigate?()
         }
 
@@ -46,8 +49,11 @@ class SignInScreenViewModel: SignInScreenViewModelProtocol {
                 let sb = UIStoryboard(name: Strings.tabBar, bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: Strings.tabBarViewController)
                 loginManager.logIn(permissions: ["public_profile", "email"], viewController: vc) { result in
-                    UIApplication.shared.windows.first?.rootViewController = vc
-                    UIApplication.shared.windows.first?.makeKeyAndVisible()
+                    let scenes = UIApplication.shared.connectedScenes
+                    let windowScenes = scenes.first as? UIWindowScene
+                    let window = windowScenes?.windows.first
+                    window?.rootViewController = vc
+                    window?.makeKeyAndVisible()
                     self.navigate?()
                 }
             })

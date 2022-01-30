@@ -77,6 +77,7 @@ extension HomeFeedScreenViewController: UITableViewDataSource {
                 self.feedArray.append(contentsOf: feed)
                 self.tableView.reloadData()
             }
+        
         }
             
     }

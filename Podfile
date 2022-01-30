@@ -7,6 +7,7 @@ target 'FacebookApp' do
 
 
     pod 'FBSDKLoginKit'
-   
+    pod 'RxSwift'
+    pod 'RxCocoa'
 
 end

@@ -44,6 +44,7 @@ class FriendListScreenViewModel: FriendListScreenViewModelProtocol {
                             }
                             self.friendsArray.append(self.friend)
                         }
+                        print(self.friendsArray)
                         completion(self.friendsArray)
                     }
                 }

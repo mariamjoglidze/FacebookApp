@@ -7,9 +7,17 @@ PODS:
   - FBSDKCoreKit_Basics (12.2.1)
   - FBSDKLoginKit (12.2.1):
     - FBSDKCoreKit (= 12.2.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
   - FBSDKLoginKit
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
   trunk:
@@ -17,13 +25,19 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - FBSDKLoginKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
   FBAEMKit: 4cea610d0bc1680572f2aad7b25db7a2f2690d82
   FBSDKCoreKit: 5b1992fe65802ca26be7e68bc4fac5f59fa39908
   FBSDKCoreKit_Basics: a6a92ca628e05f86f458a4721574c5ddfb058ba3
   FBSDKLoginKit: 7467b7f988ca4fdf48f12a839bcfce4264752429
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: e955f40567f6da9f0f31d9cd0ffe1f2a3946ca87
+PODFILE CHECKSUM: 583b10bba15ffab0f71ad44f2378ebeae2729b45
 
 COCOAPODS: 1.11.2

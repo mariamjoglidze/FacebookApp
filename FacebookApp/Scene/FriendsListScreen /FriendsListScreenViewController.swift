@@ -6,46 +6,31 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-
-class FriendsListScreenViewController: UIViewController {
+class FriendsListScreenViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
-    var friendsArray:[Friend] = []{
-            didSet {
-                spinner.isHidden = true
-                self.tableView.reloadData()
-            }
-        }
-    
-    var viewModel: FriendListScreenViewModelProtocol!
+    private let disposeBag = DisposeBag()
+    var viewModel = FriendListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        bindTableView()
+    }
+    
+    func bindTableView(){
         tableView.registerNib(class: FriendCell.self)
-        setupViewModel()
-    }
-    
-    func setupViewModel() {
-        viewModel = FriendListScreenViewModel()
-        viewModel.fetchFriendList { friends in
-            self.friendsArray.append(contentsOf: friends)
-        }
-        viewModel.showLoading = { self.spinner.startAnimating() }
-    }
-}
+        viewModel.friendsArray.bind(to: tableView.rx.items(cellIdentifier: "FriendCell", cellType: FriendCell.self)) { (row,item,cell) in
+            cell.friendNameLabel.text = item.name
+            let url = URL(string: item.picture as! String ?? "")
+            if let data = try? Data(contentsOf: url!) {
+                    cell.friendImage.image = UIImage(data: data)
+                }             }.disposed(by: disposeBag)
+        viewModel.fetchFriendList()
 
-
-extension FriendsListScreenViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friendsArray.count   }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.deque(class: FriendCell.self, for: indexPath)
-        cell.configure(with: friendsArray[indexPath.row])
-        return cell
     }
 }
-

@@ -14,8 +14,8 @@ class Strings {
     static let failedVC             = "Failed to instantiate view controller"
     static let fromStoryboard       = " from storyboard "
     static let emptyString          = ""
-    static let token                = "EAAHLlZCGjQWYBAK66dkYf2CrTgQcV65mkeeRVcrizL3E5ZBWDciKGfdGhu4DgcdaEgclH3yEZBHlbZBKO8UvBlbo4PYewZBjRqBsyI73ghnt88DswZCO7oPalreUGZC6D0gSD05i8BwDTcJZAGZCzL1PMC9E1MpSXZA81DzqFZBPrYu5gyOtPYqZC4jxQqLqVgT0PZATZAy681vff9D03RJwhSPOXh"
-
+    static let token                = "EAAHLlZCGjQWYBAJmKfQZCtaIaWUSXqVrZBw61dpsgMEB4GYNdI7fGyJUVJSEVivXJrgdd9xtJuXev5cMJXrORhSrZCsGH0dnQqXCeQfCWjz6BF0P4eUqqEUTJCrNepicuLnpX9l5t1IxqPmMqqs2FPNhUoLHkliaVC9hTGD5CL7alFB2ZCVK30ZAJvjZAY7dyjyRaHrrHzynV2L89yhwrBTZBtKesw5Ffb15WLXOu1yyWvFJQ6ZAsJhKjpnuYDGmzf2MZD"
+    static let tokenFriends         = "EAAHLlZCGjQWYBAGm4VFoxRHRKdf9nC6WktkYi4buUZABPiD3VUpjBnHqSQFEEXZA2wFysqfenN0rfs65vt0ZBZAyEOTvgUR39LVl9FXV74X3uMSc386ruleFC3DBdge3rukTEeksYATNC0ajaMZAWAA0Ia9cMfWZCZBsZCW1P7SXJnBwiRfyCRJU7pITglEZB0ro1l7jncGHeZBBYI3UsHF7ZBYD"
     static let me                   = "me"
     static let fields               = "fields"
     static let tabBar               = "TabBar"

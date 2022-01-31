@@ -10,6 +10,7 @@
 		3929A32D279F2AA200D4F1B8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929A32C279F2AA200D4F1B8 /* PlayerView.swift */; };
 		3929A330279F2B3900D4F1B8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929A32E279F2B3900D4F1B8 /* VideoCell.swift */; };
 		3929A331279F2B3900D4F1B8 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3929A32F279F2B3900D4F1B8 /* VideoCell.xib */; };
+		39B41A2E27A87415007414F2 /* VideoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B41A2D27A87414007414F2 /* VideoCellViewModel.swift */; };
 		39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C549279564AF002F49BC /* AppDelegate.swift */; };
 		39D5C54C279564AF002F49BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54B279564AF002F49BC /* SceneDelegate.swift */; };
 		39D5C54E279564AF002F49BC /* SignInSceenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C54D279564AF002F49BC /* SignInSceenViewController.swift */; };
@@ -48,6 +49,7 @@
 		3929A32C279F2AA200D4F1B8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		3929A32E279F2B3900D4F1B8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		3929A32F279F2B3900D4F1B8 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		39B41A2D27A87414007414F2 /* VideoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCellViewModel.swift; sourceTree = "<group>"; };
 		39D5C546279564AF002F49BC /* FacebookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5C549279564AF002F49BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D5C54B279564AF002F49BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,23 @@
 				3929A32C279F2AA200D4F1B8 /* PlayerView.swift */,
 			);
 			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		39B41A2B27A873D7007414F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39B41A2D27A87414007414F2 /* VideoCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39B41A2C27A873E9007414F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
+				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		39D5C53D279564AF002F49BC = {
@@ -288,8 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				39FF0449279EF011006B5319 /* ViewModel */,
-				39FF041827994F22006B5319 /* VideoesScreen.storyboard */,
-				39FF041627994F13006B5319 /* VideoesScreenViewController.swift */,
+				39B41A2C27A873E9007414F2 /* View */,
 				39FF04302799B80E006B5319 /* VideoCell */,
 			);
 			path = VideoesScreen;
@@ -353,6 +371,7 @@
 		39FF04302799B80E006B5319 /* VideoCell */ = {
 			isa = PBXGroup;
 			children = (
+				39B41A2B27A873D7007414F2 /* ViewModel */,
 				3929A32E279F2B3900D4F1B8 /* VideoCell.swift */,
 				3929A32F279F2B3900D4F1B8 /* VideoCell.xib */,
 			);
@@ -536,6 +555,7 @@
 				3929A32D279F2AA200D4F1B8 /* PlayerView.swift in Sources */,
 				39FF0442279C9C2B006B5319 /* SignInScreenViewModel.swift in Sources */,
 				3929A330279F2B3900D4F1B8 /* VideoCell.swift in Sources */,
+				39B41A2E27A87415007414F2 /* VideoCellViewModel.swift in Sources */,
 				39D5C54A279564AF002F49BC /* AppDelegate.swift in Sources */,
 				39D5C56E27956CC2002F49BC /* TableViewCellExtension.swift in Sources */,
 				39FF0439279AE8DA006B5319 /* SettingsScreenViewModel.swift in Sources */,

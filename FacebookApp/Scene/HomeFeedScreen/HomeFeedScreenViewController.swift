@@ -60,15 +60,15 @@ extension HomeFeedScreenViewController: UITableViewDataSource {
             return cell
         }
     }
-    
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        let cells = tableView.visibleCells.compactMap({ $0 as? VideoCell })
-        cells.forEach { videoCell in
-            if videoCell.isPlaying {
-                videoCell.stopPlaying()
+        
+        func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+            let cells = tableView.visibleCells.compactMap({ $0 as? VideoCell })
+            cells.forEach { videoCell in
+                if videoCell.viewModel.isPlaying {
+                    videoCell.viewModel.stopPlaying()
+                }
             }
         }
-    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if self.feedArray.count == indexPath.row + 1 {
@@ -76,20 +76,20 @@ extension HomeFeedScreenViewController: UITableViewDataSource {
                 self.feedArray.append(contentsOf: feed)
                 self.tableView.reloadData()
             }
-            
-        }
         
+        }
+            
     }
-}
-
-extension HomeFeedScreenViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? VideoCell {
-            if cell.isPlaying {
-                cell.stopPlaying()
-            } else {
-                cell.startPlaying()
+    }
+    
+    extension HomeFeedScreenViewController: UITableViewDelegate {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            if let cell = tableView.cellForRow(at: indexPath) as? VideoCell {
+                if cell.viewModel.isPlaying {
+                    cell.viewModel.stopPlaying()
+                } else {
+                    cell.viewModel.startPlaying()
+                }
             }
         }
     }
-}

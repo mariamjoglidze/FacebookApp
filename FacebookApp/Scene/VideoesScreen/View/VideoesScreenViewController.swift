@@ -61,8 +61,8 @@ extension VideoesScreenViewController: UITableViewDataSource {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         let cells = tableView.visibleCells.compactMap({ $0 as? VideoCell })
         cells.forEach { videoCell in
-            if videoCell.isPlaying {
-                videoCell.stopPlaying()
+            if videoCell.viewModel.isPlaying {
+                videoCell.viewModel.stopPlaying()
             }
         }
     }
@@ -80,10 +80,10 @@ extension VideoesScreenViewController: UITableViewDataSource {
 extension VideoesScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? VideoCell {
-            if cell.isPlaying {
-                cell.stopPlaying()
+            if cell.viewModel.isPlaying {
+                cell.viewModel.stopPlaying()
             } else {
-                cell.startPlaying()
+                cell.viewModel.startPlaying()
             }
         }
     }

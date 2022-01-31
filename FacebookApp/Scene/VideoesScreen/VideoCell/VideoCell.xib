@@ -17,32 +17,42 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Np4-m1-hG8" customClass="PlayerView" customModule="FacebookApp" customModuleProvider="target">
-                        <rect key="frame" x="15" y="41" width="398" height="193"/>
+                        <rect key="frame" x="15" y="31" width="398" height="193"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="193" id="zSl-rP-2YE"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StR-uq-OOI">
-                        <rect key="frame" x="15" y="10" width="398" height="21"/>
+                        <rect key="frame" x="15" y="10" width="398" height="11"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B9Y-fb-az5">
+                        <rect key="frame" x="8" y="209" width="412" height="34"/>
+                        <connections>
+                            <action selector="handleSliderChange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="OOo-EJ-Cvo"/>
+                        </connections>
+                    </slider>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="B9Y-fb-az5" secondAttribute="trailing" constant="10" id="3fu-vJ-6ha"/>
+                    <constraint firstAttribute="bottom" secondItem="B9Y-fb-az5" secondAttribute="bottom" constant="2" id="6qb-Pj-wpT"/>
                     <constraint firstAttribute="trailing" secondItem="StR-uq-OOI" secondAttribute="trailing" constant="15" id="8ck-Yp-vlR"/>
                     <constraint firstItem="Np4-m1-hG8" firstAttribute="trailing" secondItem="StR-uq-OOI" secondAttribute="trailing" id="9RI-Gz-8Ip"/>
                     <constraint firstItem="Np4-m1-hG8" firstAttribute="leading" secondItem="StR-uq-OOI" secondAttribute="leading" id="9ob-Ty-DKO"/>
                     <constraint firstItem="Np4-m1-hG8" firstAttribute="top" secondItem="StR-uq-OOI" secondAttribute="bottom" constant="10" id="Isc-ii-rlF"/>
+                    <constraint firstItem="B9Y-fb-az5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JTc-Zh-Dlt"/>
                     <constraint firstItem="StR-uq-OOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LD0-cG-3UI"/>
                     <constraint firstItem="StR-uq-OOI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rin-sh-L98"/>
-                    <constraint firstAttribute="bottom" secondItem="Np4-m1-hG8" secondAttribute="bottom" constant="10" id="yQx-l0-2xr"/>
+                    <constraint firstAttribute="bottom" secondItem="Np4-m1-hG8" secondAttribute="bottom" constant="20" id="yQx-l0-2xr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="playerView" destination="Np4-m1-hG8" id="ngA-Hf-tNG"/>
+                <outlet property="videoSlider" destination="B9Y-fb-az5" id="kDI-hj-eIC"/>
                 <outlet property="videoTitleLabel" destination="StR-uq-OOI" id="X1Q-Db-JOq"/>
             </connections>
             <point key="canvasLocation" x="61" y="156"/>

@@ -19,7 +19,7 @@ class FriendListViewModel {
     func fetchFriendList(){
          let requestMe = GraphRequest(graphPath: "me/friends",
                                       parameters: [Strings.fields : "id,name, picture.type(large)"],
-                                      tokenString: Strings.tokenFriends,
+                                      tokenString: Strings.token,
                                       version: nil,
                                       httpMethod: .get)
  

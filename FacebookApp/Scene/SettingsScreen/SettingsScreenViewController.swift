@@ -44,7 +44,7 @@ class SettingsScreenViewController: UIViewController {
     
     func setupButton(){
         logOutBtn.layer.borderWidth = 2.0
-        logOutBtn.layer.borderColor = UIColor.black.cgColor
+        logOutBtn.layer.borderColor = UIColor.lightGray.cgColor
         logOutBtn.layer.cornerRadius = 10.0
     }
     

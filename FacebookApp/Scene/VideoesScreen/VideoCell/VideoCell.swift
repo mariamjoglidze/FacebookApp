@@ -58,6 +58,7 @@ class VideoCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         viewModel.commonInit()
+        setupViewModel()
     }
     
 }

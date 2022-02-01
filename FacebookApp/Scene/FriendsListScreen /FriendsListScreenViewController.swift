@@ -24,11 +24,8 @@ class FriendsListScreenViewController: UIViewController, UIScrollViewDelegate {
     func bindTableView(){
         tableView.registerNib(class: FriendCell.self)
         viewModel.friendsArray.bind(to: tableView.rx.items(cellIdentifier: Strings.friendCell, cellType: FriendCell.self)) { (row,item,cell) in
-            cell.friendNameLabel.text = item.name
-            let url = URL(string: item.picture)
-            if let data = try? Data(contentsOf: url!) {
-                    cell.friendImage.image = UIImage(data: data)
-                }             }.disposed(by: disposeBag)
+            cell.configure(with: item)
+                            }.disposed(by: disposeBag)
         viewModel.fetchFriendList()
 
     }

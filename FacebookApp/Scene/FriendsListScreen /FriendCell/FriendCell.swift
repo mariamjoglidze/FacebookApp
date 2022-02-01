@@ -18,4 +18,12 @@ class FriendCell: UITableViewCell {
         super.awakeFromNib()
         friendImage.layer.cornerRadius = friendImage.bounds.width / 2
     }
+    
+    func configure(with friend: Friend){
+        friendNameLabel.text = friend.name
+        let url = URL(string: friend.picture)
+        if let data = try? Data(contentsOf: url!) {
+            self.friendImage.image = UIImage(data: data)
+    }
+}
 }
